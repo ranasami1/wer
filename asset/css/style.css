@@ -20,6 +20,10 @@ body{
     color:#65BA8E;
     letter-spacing: 1px;
     box-sizing: border-box;
+    background-color:#082327;
+}
+#footer{
+    background-color: #0d1b1e !important;
 }
 h6{
     font-weight:bold;
@@ -36,6 +40,61 @@ a,p{
 }
 img{
     height: 40px;
+}
+.top-header {
+    background-color: #082327;
+    color: white;
+    padding: 10px 20px;
+}
+.country-btn {
+    background: #04312b;
+    border: 1px solid linear-gradient(90deg, #3cb3ff, #6effa3) ;
+    color: white;
+    font-size: 12px;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    background-color: #0A1C20;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 2px solid #0A9BA4;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown img {
+    width: 20px;
+    height: 14px;
+    margin-right: 8px;
+    border-radius: 2px;
+}
+
+.dropdown select {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+}
+
+.dropdown::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: 8px;
+}
+.support {
+    margin-left: 15px;
+    font-size: 14px;
+}
+.social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
 }
 .input-box {
     padding: 8px 12px;
