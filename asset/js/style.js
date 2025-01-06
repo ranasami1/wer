@@ -3,7 +3,13 @@ const CountryFlags = {
     "US": "./asset/img/us.png"  
 };
 
-document.getElementById("country-select").addEventListener("change", function() {
-    const selectedCountry = this.value;
-    document.getElementById("country-flag").src = CountryFlags[selectedCountry];
-});
+function updateFlag() {
+    const selectedCountry = document.getElementById("country-select").value;
+    if (CountryFlags[selectedCountry]) {
+        document.getElementById("country-flag").src = CountryFlags[selectedCountry] + "?t=" + new Date().getTime();
+    } else {
+        console.error("Flag not found for country:", selectedCountry);
+    }
+}
+
+document.getElementById("country-select").addEventListener("change", updateFlag);
