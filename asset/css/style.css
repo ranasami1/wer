@@ -25,6 +25,7 @@ h6{
     font-weight:bold;
     color: #ffff;
     text-transform:uppercase;
+    line-height: 5px;
 }
 a,p{
     display: block;
@@ -35,7 +36,6 @@ a,p{
 }
 img{
     height: 40px;
-    margin: 5px 0;
 }
 .input-box {
     padding: 8px 12px;
