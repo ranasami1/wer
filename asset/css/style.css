@@ -37,32 +37,6 @@ body{
 #footer,#headerSec2{
     background-color: #0d1b1e !important;
 }
-.nav-link {
-    font-family: 'Bw Modelica';
-    font-weight: medium;
-    color: white !important;
-    font-size: 14px;
-    position: relative;
-    margin: 0 10px;
-}
-.nav-link.active {
-    background-color: rgba(0, 0, 0, 0.6);
-    font-weight:bolder;
-    padding: 8px 16px;
-    border-radius: 12px;
-    color: #a0eec0 !important;
-}
-.nav-link.active::after {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background-color: #a0eec0;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-}
 h6{
     font-weight:bold;
     color: #ffff;
@@ -130,6 +104,33 @@ a,p{
     color: white;
     text-decoration: none;
 }
+.nav-link {
+    font-family: 'Bw Modelica';
+    font-weight: medium;
+    color: white !important;
+    font-size: 14px;
+    position: relative;
+    margin: 0 10px;
+    letter-spacing: 2px;
+}
+.nav-link.active {
+    background-color: #051518;
+    font-weight:bolder;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: #a0eec0 !important;
+}
+.nav-link.active::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #a0eec0;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 #login-register a{
     color: #ffff !important;
     font-family:'Bw Modelica';
@@ -140,7 +141,7 @@ a,p{
     background-color:#051518; 
     border-radius: 30px;
     padding: 5px 20px;
-    width:40%;
+    width:45%;
 }
 .custom-search-bar input {
     background: none; 
