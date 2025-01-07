@@ -130,6 +130,12 @@ a,p{
     color: white;
     text-decoration: none;
 }
+#login-register a{
+    color: #ffff !important;
+    font-family:'Bw Modelica';
+    font-weight: normal;
+    
+}
 .input-box {
     padding: 8px 12px;
     font-size: 14px;
