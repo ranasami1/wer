@@ -111,6 +111,7 @@ a,p{
 .signup-btn {
     padding: 8px 14px;
     font-size: 14px;
+    margin: 5px;
     font-weight: bold;
     color: white;
     border: none;
