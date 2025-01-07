@@ -136,6 +136,22 @@ a,p{
     font-weight: normal;
     
 }
+.custom-search-bar {
+    background-color:#051518; 
+    border-radius: 30px;
+    padding: 5px 20px;
+    width:40%;
+}
+.custom-search-bar input {
+    background: none; 
+    border: none; 
+    color: #427c62;
+    outline: none; /* No outline on focus */
+    width: 100%; /* Full width */
+}
+.custom-search-bar input::placeholder{
+    color: #427c62;
+}
 .input-box {
     padding: 8px 12px;
     font-size: 14px;
