@@ -29,7 +29,6 @@ h6{
     font-weight:bold;
     color: #ffff;
     text-transform:uppercase;
-    line-height: 5px;
 }
 a,p{
     display: block;
@@ -38,8 +37,8 @@ a,p{
     font-weight: normal;
     color:#65BA8E;
 }
-img{
-    height: 40px;
+.payment{
+    height: 45px;
 }
 .top-header {
     background-color: #082327;
@@ -76,7 +75,7 @@ img{
     background: transparent;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     appearance: none;
     outline: none;
@@ -84,16 +83,15 @@ img{
 
 .dropdown::after {
     content: "▼";
-    font-size: 12px;
-    margin-left: 8px;
+    font-size: 10px;
+    margin-left: 5px;
 }
 .support {
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 14px;
 }
 .social-icons a {
     color: white;
-    margin-left: 10px;
     text-decoration: none;
 }
 .input-box {
