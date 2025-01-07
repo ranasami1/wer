@@ -43,7 +43,7 @@ a,p{
 .top-header {
     background-color: #082327;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 .country-btn {
     background: #04312b;
@@ -60,7 +60,6 @@ a,p{
     border: 2px solid #0A9BA4;
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 16px;
     cursor: pointer;
 }
 
@@ -68,7 +67,6 @@ a,p{
     width: 20px;
     height: 14px;
     margin-right: 8px;
-    border-radius: 2px;
 }
 
 .dropdown select {
@@ -83,12 +81,12 @@ a,p{
 
 .dropdown::after {
     content: "▼";
-    font-size: 10px;
-    margin-left: 5px;
+    font-size: 8px;
+    margin-left: 3px;
 }
 .support {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .social-icons a {
     color: white;
