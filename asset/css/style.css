@@ -42,6 +42,7 @@ body{
 #footer,#headerSec2{
     background-color: #0d1b1e !important;
     font-size: 14px;
+    height: auto;
 }
 h6{
     font-family:"Bw Modelica DEMO Black" ;
