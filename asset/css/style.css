@@ -1,24 +1,24 @@
 @font-face {
-    font-family: 'Bw Modelica';
-    src: url('../fonts/BwModelicaDEMO-Black-BF65d6bd3d0f3ae.otf') format('truetype');
+    font-family: 'Bw Modelica DEMO Black';
+    src: url('../fonts/BwModelicaDEMO-Black-BF65d6bd3d0f3ae.otf') format('opentype');
     font-weight: bold;
     font-style: bold;
 }
 @font-face {
-    font-family: 'Bw Modelica';
-    src: url('../fonts//BwModelicaDEMO-RegularUltraCondensed-BF65d6bd3c89538.otf') format('truetype');
+    font-family: 'Bw Modelica DEMO';
+    src: url('../fonts//BwModelicaDEMO-Regular-BF65d6bd3cf3fe5.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Bw Modelica';
-    src: url('../fonts//BwModelicaSS02DEMO-ExtraBoldUltraCondensed-BF65d6bd3aa1efd.otf') format('truetype');
+    src: url('../fonts//BwModelicaSS02DEMO-ExtraBoldUltraCondensed-BF65d6bd3aa1efd.otf') format('opentype');
     font-weight: bolder;
     font-style: bolder;
 }
 @font-face {
     font-family: 'Bw Modelica';
-    src: url('../fonts//BwModelicaSS02DEMO-MediumUltraCondensed-BF65d6bd3ab0afb.otf') format('truetype');
+    src: url('../fonts//BwModelicaSS02DEMO-MediumUltraCondensed-BF65d6bd3ab0afb.otf') format('opentype');
     font-weight: medium;
     font-style: medium;
 }
@@ -27,18 +27,18 @@
     margin: 0;
 }
 body{
-    font-family:'Bw Modelica';
-    font-weight: normal;
+    font-family:'Bw Modelica DEMO';
+    font-weight:normal;
     color: #6c9d96;
     box-sizing: border-box;
     background-color:#082327;
-    letter-spacing: 2px;
 }
 #footer,#headerSec2{
     background-color: #0d1b1e !important;
     font-size: 14px;
 }
 h6{
+    font-family:"Bw Modelica DEMO Black" ;
     font-weight:bold;
     color: #ffff;
     text-transform:uppercase;
@@ -46,8 +46,7 @@ h6{
 a,p{
     display: block;
     text-decoration: none;
-    font-family:'Bw Modelica';
-    font-weight: normal;
+    font-family:'Bw Modelica DEMO';
     color:#65BA8E;
 }
 .payment{
@@ -147,8 +146,8 @@ a,p{
     background: none; 
     border: none; 
     color: #427c62;
-    outline: none; /* No outline on focus */
-    width: 100%; /* Full width */
+    outline: none; 
+    width: 100%; 
 }
 .custom-search-bar input::placeholder{
     color: #427c62;
