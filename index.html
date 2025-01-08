@@ -9,223 +9,186 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-
-  <title>Register</title>
+  <title>home</title>
 </head>
-
 <body>
-  <div id="header" class="container">
-    <div class="container top-header d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <div class="dropdown">
-          <img id="country-flag" src="./asset/img/egy.png" alt="Egypt Flag" style="border-radius: 50%;">
-          <select id="country-select">
-            <option value="EGP" selected>EGP</option>
-            <option value="US">US</option>
-          </select>
+    <div id="header" class="container">
+      <div class="container top-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="dropdown">
+            <img id="country-flag" src="./asset/img/egy.png" alt="Egypt Flag" style="border-radius: 50%;">
+            <select id="country-select">
+              <option value="EGP" selected>EGP</option>
+              <option value="US">US</option>
+            </select>
+          </div>
+          <span class="support">| SUPPORT</span>
         </div>
-        <span class="support">| SUPPORT</span>
-      </div>
-      <div class="social-icons d-flex gap-2">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <span>|</span>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-  </div>
-  <div id="headerSec2">
-    <div class="container d-flex justify-content-between align-items-center " style="border-bottom: #65BA8E 4px solid;">
-      <a href="#home"><img src="./asset/img/LOGOI-05 1.png" style="width: 300px;"></a>
-      <nav class="navbar navbar-expand-lg">
-        <div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TOURNAMENT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div id="login-register">
-        <a href="#"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
-      </div>
-    </div>
-    <div class="container d-flex justify-content-between py-4">
-      <div>
-        <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
-      </div>
-      <div class="custom-search-bar d-flex align-items-center ms-auto">
-        <img style="width: 35px; margin: 0 5px;" src="./asset/img/search.png">
-        <input type="text" placeholder="What are you looking for?">
-      </div>
-      <div class="d-flex gap-3 ms-auto">
-        <a href="#"><img style="width: 30px;" src="./asset/img/wallet.png"></a>
-        <a href="#"><img style="width: 30px;" src="./asset/img/cart.png"></a>
-      </div>
-    </div>
-  </div>
-  <section class="container d-flex flex-column gap-5">
-    <div id="signin-sec1" class="d-flex align-items-center flex-column mt-5">
-      <div id="signin-baner">
-        <h2>MY<br>ACCOUNT</h2>
-        <p class="col-sm-4"
-          style="color: #ffff !important; font-weight:lighter !important;line-height: 17px;font-size: 10px;">Lorem ipsum
-          dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-          suscipit lobortis </p>
-        <button class="signin-btn">SIGN IN</button>
-      </div>
-    </div>
-    <div id="sign-registersec" class="d-flex flex-column w-100 mb-5 pb-4">
-      <div id="btn-group" class="w-100 d-flex">
-        <button class="w-50 active">SIGN IN</button>
-        <button class="w-50">REGISTER</button>
-        </div>
-      <div class="w-50 m-auto">
-        <div class="p-4 d-flex">
-          <img src="./asset/img/LOGOI-05 2.png" style="width: 70px;margin: auto;">
-        </div>
-        <form class="d-flex flex-column gap-4 w-100" >
-          <div class="form-group w-100">
-            <input type="text" class="form-control w-100" aria-describedby="emailHelp"
-              placeholder="Username">
-          </div>
-          <div class="form-group w-100">
-            <input type="email" class="form-control w-100" aria-describedby="emailHelp"
-              placeholder="Email">
-          </div>
-          <div class="form-group w-100">
-            <input type="password" class="form-control w-100" placeholder="Password">
-          </div>
-          <button id="Register-btn" type="submit" class="btn">REGISTER</button>
-        </form>
-    </div>
-  </section>
-  <div id="footer" style="background-color: #082327;height: auto;">
-    <div class="container pt-3">
-      <div class="row">
-        <div class="col-3">
-          <div class="d-flex justify-content-start gap-2">
-            <img style="height: 50px;" src="./asset/img/Email Delivery.png">
-            <div>
-              <h6>Email Delivery</h6>
-              <p id="textsec">Orders Delivered by Email.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex justify-content-start gap-2">
-            <img style="height: 50px;" src="./asset/img/Secure Payment.png">
-            <div>
-              <h6>Secure Payment</h6>
-              <p id="textsec">High Secure Payment Gateways.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex justify-content-start gap-2">
-            <img style="height: 50px;" src="./asset/img/Happy Customers.png">
-            <div>
-              <h6>Happy Customers</h6>
-              <p id="textsec">Thousands of Satisfied Customers.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex justify-content-start gap-2">
-            <img style="height: 50px;" src="./asset/img/Best Prices.png">
-            <div>
-              <h6>Best Prices</h6>
-              <p id="textsec">Best Deals for You.</p>
-            </div>
-          </div>
+        <div class="social-icons d-flex gap-2">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <span>|</span>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
-    <div class="container mt-3" style="border-bottom: 4px solid #0c343a;border-top: 4px solid #0c343a;">
-      <div class="row mt-4">
-        <div class="col-3">
-          <div id="textsec" style="font-size: 12px;">
-            <img style="height:55px;" src="./asset/img/footer logo.png">
-            <p>I'm Alive is one of the first online Stores that sell digital codes & gift cards for gamers.</p>
-            <p>Reg. No.: 1341600
-              128 City Road, London, United Kingdom, EC1V 2NX </p>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex flex-column align-items-start">
-            <h6>I’m Alive</h6>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Refund Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">My Account</a>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="d-flex flex-column align-items-start">
-            <h6>Contact Us</h6>
-            <a href="mailto:support@iamalive.store">support@iamalive.store</a>
-            <a href="tell:+201203226676">+201203226676</a>
-            <a href="#">Support Ticket</a>
-            <a href="#">FAQ</a>
-          </div>
-        </div>
-        <div class="col-3">
-          <h6>GET IN THE GAME</h6>
-          <div class="d-flex gap-3">
-            <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/facebook.png"></a>
-            <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/whatsup.png"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container" style="border-bottom: 4px solid #0c343a;">
-      <div class="row pt-5 pb-5">
-        <div class="col-6">
-          <h6 class="mb-3">Payment system</h6>
-          <img class="me-2 payment" src="./asset/img/Visa.png">
-          <img class="me-2 payment" src="./asset/img/paypal.png">
-          <img class="me-2 payment" src="./asset//img/امان.png">
-          <img class="me-2 payment" src="./asset/img/ميزه.png">
-          <img class="me-2 payment" src="./asset/img/fawry.png">
-          <img class="me-2 payment" src="./asset/img/Group 70.png">
-          <img class="me-2 payment" src="./asset/img/Group 70.png">
-          <img class="me-2 payment" src="./asset/img/orangeMoney.png">
-          <img class="me-2 payment" src="./asset/img/Vodafone.png">
-        </div>
-        <div class="col-6">
-          <h6 class="mb-3">Join our newsletter!</h6>
+    <div id="headerSec2">
+      <div class="container d-flex justify-content-between align-items-center " style="border-bottom: #65BA8E 4px solid;">
+        <a href="index.html"><img src="./asset/img/LOGOI-05 1.png" style="width: 300px;"></a>
+        <nav class="navbar navbar-expand-lg">
           <div>
-            <input type="email" class="input-box" placeholder="Your email address">
-            <button class="signup-btn">SIGN UP</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TOURNAMENT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </nav>
+        <div id="login-register">
+          <a href="register.html"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-between py-4">
+        <div>
+          <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
+        </div>
+        <div class="custom-search-bar d-flex align-items-center ms-auto">
+          <img style="width: 35px; margin: 0 5px;" src="./asset/img/search.png">
+          <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div class="d-flex gap-3 ms-auto">
+          <a href="#"><img style="width: 30px;" src="./asset/img/wallet.png"></a>
+          <a href="#"><img style="width: 30px;" src="./asset/img/cart.png"></a>
         </div>
       </div>
     </div>
-    <div class="container d-flex">
-      <p class="m-auto p-3" id="textsec"><span>I'm Alive</span> 2022 CREATED BY INNOVALZ.</p>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="./asset/js/style.js"></script>
 
 
-</body>
 
-</html>
+    <div id="footer" style="background-color: #082327;height: auto;">
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-3">
+              <div class="d-flex justify-content-start gap-2">
+                <img style="height: 50px;" src="./asset/img/Email Delivery.png">
+                <div>
+                  <h6>Email Delivery</h6>
+                  <p id="textsec">Orders Delivered by Email.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-flex justify-content-start gap-2">
+                <img style="height: 50px;" src="./asset/img/Secure Payment.png">
+                <div>
+                  <h6>Secure Payment</h6>
+                  <p id="textsec">High Secure Payment Gateways.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-flex justify-content-start gap-2">
+                <img style="height: 50px;" src="./asset/img/Happy Customers.png">
+                <div>
+                  <h6>Happy Customers</h6>
+                  <p id="textsec">Thousands of Satisfied Customers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-flex justify-content-start gap-2">
+                <img style="height: 50px;" src="./asset/img/Best Prices.png">
+                <div>
+                  <h6>Best Prices</h6>
+                  <p id="textsec">Best Deals for You.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3" style="border-bottom: 4px solid #0c343a;border-top: 4px solid #0c343a;">
+          <div class="row mt-4">
+            <div class="col-3">
+              <div id="textsec" style="font-size: 12px;">
+                <img style="height:55px;" src="./asset/img/footer logo.png">
+                <p>I'm Alive is one of the first online Stores that sell digital codes & gift cards for gamers.</p>
+                <p>Reg. No.: 1341600
+                  128 City Road, London, United Kingdom, EC1V 2NX </p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column align-items-start">
+                <h6>I’m Alive</h6>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">My Account</a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="d-flex flex-column align-items-start">
+                <h6>Contact Us</h6>
+                <a href="mailto:support@iamalive.store">support@iamalive.store</a>
+                <a href="tell:+201203226676">+201203226676</a>
+                <a href="#">Support Ticket</a>
+                <a href="#">FAQ</a>
+              </div>
+            </div>
+            <div class="col-3">
+              <h6>GET IN THE GAME</h6>
+              <div class="d-flex gap-3">
+                <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/facebook.png"></a>
+                <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/whatsup.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="border-bottom: 4px solid #0c343a;">
+          <div class="row pt-5 pb-5">
+            <div class="col-6">
+              <h6 class="mb-3">Payment system</h6>
+              <img class="me-2 payment" src="./asset/img/Visa.png">
+              <img class="me-2 payment" src="./asset/img/paypal.png">
+              <img class="me-2 payment" src="./asset//img/امان.png">
+              <img class="me-2 payment" src="./asset/img/ميزه.png">
+              <img class="me-2 payment" src="./asset/img/fawry.png">
+              <img class="me-2 payment" src="./asset/img/Group 70.png">
+              <img class="me-2 payment" src="./asset/img/Group 70.png">
+              <img class="me-2 payment" src="./asset/img/orangeMoney.png">
+              <img class="me-2 payment" src="./asset/img/Vodafone.png">
+            </div>
+            <div class="col-6">
+              <h6 class="mb-3">Join our newsletter!</h6>
+              <div>
+                <input type="email" class="input-box" placeholder="Your email address">
+                <button class="signup-btn">SIGN UP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex">
+          <p class="m-auto p-3" id="textsec"><span>I'm Alive</span> 2022 CREATED BY INNOVALZ.</p>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script src="./asset/js/style.js"></script>
+    
+    
+    </body>
+    
+    </html>
