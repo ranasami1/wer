@@ -234,7 +234,7 @@ h2{
     height: 40px;
     font-family:"Bw Modelica DEMO Black";
     color: #ffff;
-    background: linear-gradient(90deg, #2b4285, #6effa3);
+    background: linear-gradient(90deg, #2b4285, #6effa3,#2e4e94);
 }
 #btn-group :nth-child(1){
     border-top-left-radius: 35px;
@@ -244,17 +244,29 @@ h2{
 }
 form .form-group .form-control{
    background: #051518;
-   border: none;
+   border: 1px solid #051518;
    border-radius: 30px;
    display: flex;
    align-items: center;
    color: #65ba8e;
    width:50%;
+   text-align: center;
 }
 form .form-group .form-control::placeholder{
     color:#285344;
 }
+form .form-group .form-control:focus{
+    border-color:linear-gradient(90deg, #2b4285, #6effa3) !important;
+}
 #btn-group .active{
     background: #051518;
 }
+#Register-btn{
+    width:120px;
+    margin: auto;
+    border-radius: 35px;
+    background: linear-gradient(90deg, #1a2f4f, #5fb48f, #1a2f4f);
+    color: #ffff;
+    font-family:"Bw Modelica DEMO Black";
 
+}

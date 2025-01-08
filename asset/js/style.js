@@ -11,5 +11,11 @@ function updateFlag() {
         console.error("Flag not found for country:", selectedCountry);
     }
 }
-
 document.getElementById("country-select").addEventListener("change", updateFlag);
+
+//disable refreshing behavior onSubmit
+const form = document.querySelector("form"); 
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    console.log('Form submitted without refreshing the page!');
+});
