@@ -186,15 +186,16 @@ a,p{
 }
 #signin-sec1{
     background-image: url("../img/myacc_bg.png");
-    background-size: 100%;
+    background-size:cover;
     background-repeat: no-repeat;
-}
-#signin-baner{
+    min-height: 360px;
     border-radius: 35px;
     padding: 60px;
-    margin-left: 100px;
-    margin-top: 30px;
     color: #ffff;
+}
+#signin-baner{
+   margin-left: 95px;
+   margin-top: 40px;
 }
 .signin-btn{
     width: 150px;
