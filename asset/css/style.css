@@ -219,8 +219,6 @@ h2{
     padding: 10px 0;
 }
 #sign-registersec{
-    width: 100%;
-    min-height: 360px;
     background-color: #051c1e;
     border-radius: 35px;
 }
@@ -228,5 +226,35 @@ h2{
     font-family:"Bw Modelica DEMO"!important;
     font-weight: normal !important;
     color:#346a56;
+}
+#btn-group button{
+    outline: none;
+    border: none;
+    margin: 0;
+    height: 40px;
+    font-family:"Bw Modelica DEMO Black";
+    color: #ffff;
+    background: linear-gradient(90deg, #2b4285, #6effa3);
+}
+#btn-group :nth-child(1){
+    border-top-left-radius: 35px;
+}
+#btn-group :nth-child(2){
+    border-top-right-radius: 35px;
+}
+form .form-group .form-control{
+   background: #051518;
+   border: none;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   color: #65ba8e;
+   width:50%;
+}
+form .form-group .form-control::placeholder{
+    color:#285344;
+}
+#btn-group .active{
+    background: #051518;
 }
 

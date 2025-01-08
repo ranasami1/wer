@@ -90,33 +90,28 @@
         <button class="signin-btn">SIGN IN</button>
       </div>
     </div>
-    <div id="sign-registersec" class="d-flex flex-column align-items-center justify-content-center mb-5 pb-4">
-      <div class="w-100 d-flex">
-        <button class="w-50 ">Sign in</button>
-        <button class="w-50 ">Register</button>
-      </div>
-      <div>
-        <img src="./asset/img/LOGOI-05 2.png" style="width: 70px;">
-      </div>
-      <div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Username</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div id="sign-registersec" class="d-flex flex-column w-100 mb-5 pb-4">
+      <div id="btn-group" class="w-100 d-flex">
+        <button class="w-50 active">SIGN IN</button>
+        <button class="w-50">REGISTER</button>
+        </div>
+      <div class="w-50 m-auto">
+        <div class="p-4 d-flex">
+          <img src="./asset/img/LOGOI-05 2.png" style="width: 70px;margin: auto;">
+        </div>
+        <form class="d-flex flex-column gap-4 w-100">
+          <div class="form-group w-100">
+            <input type="text" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Username">
           </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <div class="form-group w-100">
+            <input type="email" class="form-control w-100" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Email">
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <div class="form-group w-100">
+            <input type="password" class="form-control w-100" id="exampleInputPassword1" placeholder="Password">
           </div>
-          <button type="submit" class="btn btn-primary">Register</button>
+          <button id="Register-btn" type="submit" class="btn">Register</button>
         </form>
     </div>
   </section>
