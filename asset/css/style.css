@@ -29,13 +29,14 @@
 body{
     font-family:'Bw Modelica';
     font-weight: normal;
-    color:#65BA8E;
+    color: #6c9d96;
     box-sizing: border-box;
     background-color:#082327;
     letter-spacing: 2px;
 }
 #footer,#headerSec2{
     background-color: #0d1b1e !important;
+    font-size: 14px;
 }
 h6{
     font-weight:bold;
