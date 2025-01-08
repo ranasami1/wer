@@ -30,9 +30,9 @@ body{
     font-family:'Bw Modelica';
     font-weight: normal;
     color:#65BA8E;
-    letter-spacing: 1px;
     box-sizing: border-box;
     background-color:#082327;
+    letter-spacing: 2px;
 }
 #footer,#headerSec2{
     background-color: #0d1b1e !important;
@@ -111,7 +111,6 @@ a,p{
     font-size: 14px;
     position: relative;
     margin: 0 10px;
-    letter-spacing: 2px;
 }
 .nav-link.active {
     background-color: #051518;
@@ -169,7 +168,7 @@ a,p{
     color: #6c9d96;
 }
 
-.signup-btn {
+.signup-btn{
     padding: 8px 14px;
     font-size: 14px;
     margin: 5px;
@@ -184,3 +183,33 @@ a,p{
 .signup-btn:hover {
     opacity: 0.85;
 }
+#signin-sec1{
+    background-image: url("../img/myacc_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#signin-baner{
+    border-radius: 35px;
+    padding: 60px;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: #ffff;
+}
+.signin-btn{
+    width: 150px;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 7px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1e616f, #5fb48f);
+}
+h2{
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+
