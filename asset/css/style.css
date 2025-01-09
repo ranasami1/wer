@@ -304,7 +304,7 @@ form .form-group .form-control:focus{
     font-weight: normal;
     color: #3E7D64;
 }
-#date{
+#date,#price{
     font-size: 12px;
 }
 .fa-star{
@@ -321,13 +321,36 @@ form .form-group .form-control:focus{
 }
 #rows #secHeader{
     background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
-    padding:10px 90px;
+    padding:10px;
+    width: 40%;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
     color: #ffff;
     position: relative;
     top: -5px;
-    
-
+    text-align: center;
 }
-
+.game-card {
+    width: 200px;
+    background: #16302B;
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    text-align:left;
+    position: relative;
+    border: 2px solid #2AB6A5;
+}
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.discount-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #2AB6A5;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
