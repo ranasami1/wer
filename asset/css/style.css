@@ -302,7 +302,7 @@ form .form-group .form-control:focus{
 #card #rate p,#date{
     font-family:"Bw Modelica DEMO Ultra Cond";
     font-weight: normal;
-    color: #5fa37b;
+    color: #3E7D64;
 }
 #date{
     font-size: 12px;
@@ -312,5 +312,22 @@ form .form-group .form-control:focus{
 }
 .checked{
     color:#65ba8e;
+}
+#Hline{
+    width: 80%;
+    height: 5px;
+    background: #5fa37b;
+    border-radius: 20px;
+}
+#reviews #secHeader{
+    background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
+    padding:10px 90px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    color: #ffff;
+    position: relative;
+    top: -5px;
+    
+
 }
 
