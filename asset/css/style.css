@@ -287,7 +287,7 @@ form .form-group .form-control:focus{
     color: white;
     border-radius: 20px;
 }
-#reviews{
+#rows{
     background-color: #113331;
     border-radius: 40px;
     min-height: 300px
@@ -314,12 +314,12 @@ form .form-group .form-control:focus{
     color:#65ba8e;
 }
 #Hline{
-    width: 80%;
+    width: 90%;
     height: 5px;
     background: #5fa37b;
     border-radius: 20px;
 }
-#reviews #secHeader{
+#rows #secHeader{
     background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
     padding:10px 90px;
     border-bottom-right-radius: 40px;
