@@ -17,7 +17,7 @@
     font-style: bolder;
 }
 @font-face {
-    font-family: 'Bw Modelica';
+    font-family: 'Bw Modelica SS02 DEMO Medium Ultra Cond';
     src: url('../fonts//BwModelicaSS02DEMO-MediumUltraCondensed-BF65d6bd3ab0afb.otf') format('opentype');
     font-weight: medium;
     font-style: medium;
@@ -112,7 +112,7 @@ a{
     text-decoration: none;
 }
 .nav-link {
-    font-family: 'Bw Modelica';
+    font-family: 'Bw Modelica SS02 DEMO Medium Ultra Cond';
     font-weight: medium;
     color: white !important;
     font-size: 14px;
@@ -299,3 +299,18 @@ form .form-group .form-control:focus{
     border-radius: 40px;
     color: #ffff;
 }
+#card #rate p,#date{
+    font-family:"Bw Modelica DEMO Ultra Cond";
+    font-weight: normal;
+    color: #5fa37b;
+}
+#date{
+    font-size: 12px;
+}
+.fa-star{
+    color: #051518;
+}
+.checked{
+    color:#65ba8e;
+}
+

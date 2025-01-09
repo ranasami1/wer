@@ -19,4 +19,12 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     console.log('Form submitted without refreshing the page!');
 });
-
+//initialize swiper
+const swiper = new Swiper('slider-wrapper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
