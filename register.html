@@ -61,7 +61,7 @@
         </div>
       </nav>
       <div id="login-register">
-        <a href="register.html"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
+        <a href="./register.html"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
       </div>
     </div>
     <div class="container d-flex justify-content-between py-4">
@@ -92,10 +92,10 @@
     </div>
     <div id="sign-registersec" class="d-flex flex-column w-100 mb-5 pb-4">
       <div id="btn-group" class="w-100 d-flex">
-        <button class="w-50 active">SIGN IN</button>
-        <button class="w-50">REGISTER</button>
-        </div>
-      <div class="w-50 m-auto">
+        <button id="sign" class="w-50" onclick="colorChange('sign')">SIGN IN</button>
+        <button id="register" class="w-50" onclick="colorChange('register')">REGISTER</button>
+      </div>
+      <div id="signin_form" class="w-50 m-auto">
         <div class="p-4 d-flex">
           <img src="./asset/img/LOGOI-05 2.png" style="width: 70px;margin: auto;">
         </div>
@@ -114,6 +114,29 @@
           <button id="Register-btn" type="submit" class="btn">REGISTER</button>
         </form>
     </div>
+    <div id="register_form" class="w-50 m-auto">
+      <div class="p-4 d-flex">
+        <img src="./asset/img/LOGOI-05 2.png" style="width: 70px;margin: auto;">
+      </div>
+      <form class="d-flex flex-column gap-4 w-100" >
+        <div class="form-group w-100">
+          <input type="text" class="form-control w-100" aria-describedby="emailHelp"
+            placeholder="Username">
+        </div>
+        <div class="form-group w-100">
+          <input type="password" class="form-control w-100" placeholder="Password">
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <div> 
+            <input id="remember" type="checkbox">
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button id="Register-btn" type="submit" class="btn">REGISTER</button>
+      </form>
+  </div>
+    
   </section>
   <div id="footer" style="background-color: #082327;height: auto;">
     <div class="container pt-3">

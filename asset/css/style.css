@@ -235,7 +235,7 @@ h2{
     height: 40px;
     font-family:"Bw Modelica DEMO Black";
     color: #ffff;
-    background: linear-gradient(90deg, #2b4285, #6effa3,#2e4e94);
+    background: #051518;
 }
 #btn-group :nth-child(1){
     border-top-left-radius: 35px;
@@ -260,6 +260,9 @@ form .form-group .form-control:focus{
     border-color:linear-gradient(90deg, #2b4285, #6effa3) !important;
 }
 #btn-group .active{
+    background: linear-gradient(90deg, #1a2f4f, #5fb48f, #1a2f4f);
+}
+.notActive{
     background: #051518;
 }
 #Register-btn{
@@ -269,7 +272,6 @@ form .form-group .form-control:focus{
     background: linear-gradient(90deg, #1a2f4f, #5fb48f, #1a2f4f);
     color: #ffff;
     font-family:"Bw Modelica DEMO Black";
-
 }
 .game-offer {
     border-radius: 15px;
@@ -353,4 +355,7 @@ form .form-group .form-control:focus{
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 10px;
+}
+.toggle_form{
+    display: none;
 }

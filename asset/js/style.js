@@ -28,3 +28,29 @@ const swiper = new Swiper('slider-wrapper', {
     },
   
   });
+  function colorChange(buttonId) {
+    let signBtn = document.getElementById("sign");
+    let registerBtn = document.getElementById("register");
+    let signForm = document.getElementById("signin_form");
+    let registerForm = document.getElementById("register_form");
+
+    if (buttonId === "sign") {
+        signBtn.classList.add("active");
+        signBtn.classList.remove("notActive");
+        registerForm.classList.add("toggle_form");
+        signForm.classList.remove("toggle_form");
+        registerBtn.classList.add("notActive");
+        registerBtn.classList.remove("active");
+        history.pushState({}, '', '/SignIn');
+    } else {
+        registerBtn.classList.add("active");
+        registerBtn.classList.add("notActive");
+        registerForm.classList.remove("toggle_form");
+        signForm.classList.add("toggle_form");
+        signBtn.classList.add("notActive");
+        signBtn.classList.remove("active");
+        history.pushState({}, '', '/Register');
+    }
+}
+ 
+ 
