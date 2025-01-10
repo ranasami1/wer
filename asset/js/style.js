@@ -33,6 +33,7 @@ const swiper = new Swiper('slider-wrapper', {
     let registerBtn = document.getElementById("register");
     let signForm = document.getElementById("signin_form");
     let registerForm = document.getElementById("register_form");
+    let alertMessage = document.getElementById("alert")
 
     if (buttonId === "sign") {
         signBtn.classList.add("active");
@@ -42,6 +43,7 @@ const swiper = new Swiper('slider-wrapper', {
         registerBtn.classList.add("notActive");
         registerBtn.classList.remove("active");
         history.pushState({}, '', '/SignIn');
+        alertMessage.classList.remove("toggle_form");
     } else {
         registerBtn.classList.add("active");
         registerBtn.classList.add("notActive");
@@ -50,6 +52,7 @@ const swiper = new Swiper('slider-wrapper', {
         signBtn.classList.add("notActive");
         signBtn.classList.remove("active");
         history.pushState({}, '', '/Register');
+        alertMessage.classList.add("toggle_form");
     }
 }
  
