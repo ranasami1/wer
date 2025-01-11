@@ -81,7 +81,22 @@
 
     <section class="container d-flex flex-column gap-3">
         <div id="home_sec1">
-            <h2>row1</h2>
+           
+        </div>
+
+        <div id="rows" class="container d-flex align-items-center flex-column swiper my-5 h-auto">
+            <div id="Hline"></div>
+            <div id="secHeader">
+                <h6>MOST RECENT</h6>
+            </div>
+            <div class="d-flex align-items-center flex-column">
+
+               
+            </div>
+            <div class="toggle-btn">
+                <button class="toggleButton" onclick="toggleGameList(event)">▼</button>
+
+            </div>
         </div>
 
         <div id="rows" class="container d-flex align-items-center flex-column swiper my-5 h-auto">
@@ -90,7 +105,8 @@
                 <h6>EXCLUSIVE OFFER</h6>
             </div>
             <div class="d-flex align-items-center justify-content-center flex-column">
-                <ul id="visible" class="d-flex align-items-center justify-content-center flex-wrap pt-5 gap-5 list-unstyled">
+                <ul id="visible"
+                    class="d-flex align-items-center justify-content-center flex-wrap pt-5 gap-5 list-unstyled">
                     <li class="game-card">
                         <img src="./asset/img/game.png" alt="PUBG Mobile">
                         <p class="text-muted mt-2">Base Game</p>
@@ -164,10 +180,11 @@
                         <div class="discount-badge">-10%</div>
                     </li>
                 </ul>
-            </div>  
+            </div>
             <div class="toggle-btn">
-                <button id="toggleButton" onclick="toggleGameList()">Show More ⬇</button>
-            </div>        
+                <button class="toggleButton" onclick="toggleGameList(event)">▼</button>
+
+            </div>
         </div>
 
         <div id="rows" class="container d-flex align-items-center flex-column  mb-5">

@@ -382,7 +382,7 @@ form .form-group .form-control:focus{
     opacity: 0;
     transition: height 1s ease, opacity 1s ease;
 }
-#toggleButton{
+.toggleButton{
     width: 40px;
     height: 40px;
     border-radius: 20px;

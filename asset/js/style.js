@@ -69,12 +69,13 @@ function toggleShow(btnId){
         console.log("test");
     }
 }
-function toggleGameList() {
-    let gameList = document.getElementById("hidden");
-    let toggleButton = document.getElementById("toggleButton");
+function toggleGameList(event) {
+    let toggleButton = event.target; // Get the clicked button
+    let container = toggleButton.closest(".container"); // Find the nearest parent container
+    let gameList = container.querySelector("#hidden"); // Get the related hidden list
 
     if (gameList.style.height === "0px" || gameList.style.height === "") {
-        gameList.style.height = gameList.scrollHeight + "px"; // Expands to actual content height
+        gameList.style.height = gameList.scrollHeight + "px"; // Expands
         gameList.style.opacity = "1";
         toggleButton.innerHTML = "▲";
     } else {
