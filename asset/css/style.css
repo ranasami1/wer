@@ -339,7 +339,8 @@ form .form-group .form-control:focus{
     padding: 15px;
     color: white;
     text-align:left;
-    position: relative; 
+    position: relative;
+    overflow: hidden; 
 }
 .game_card_active{
     border: 2px solid;
@@ -354,13 +355,14 @@ form .form-group .form-control:focus{
 }
 .discount-badge {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     right: 10px;
-    background: #2AB6A5;
+    background: #65ba8e;
     color: white;
-    padding: 5px 10px;
+    padding: 3px 10px 0;
     font-size: 14px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .toggle_form{
     display: none !important;
