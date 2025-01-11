@@ -306,6 +306,7 @@ form .form-group .form-control:focus{
     font-weight: normal;
     color: #3E7D64;
 }
+
 #date,#price{
     font-size: 12px;
 }

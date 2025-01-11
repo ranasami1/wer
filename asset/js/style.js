@@ -23,7 +23,7 @@ if(form !== null){
 }
 
 //initialize swiper
-const swiper = new Swiper('.slider-wrapper', {
+const swiper = new Swiper('.swiper', {
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
