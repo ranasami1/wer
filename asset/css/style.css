@@ -343,12 +343,11 @@ form .form-group .form-control:focus{
     position: relative;
     overflow: hidden; 
 }
-.game_card_active{
+.game-card:hover{
     border: 2px solid;
     border-image-source: linear-gradient(to right,#6effa3,  #1583a5);
     border-image-slice: 1;
     transition-timing-function:ease;
-    
 }
 .game-card img {
     width: 100%;
@@ -375,12 +374,4 @@ form .form-group .form-control:focus{
     border-radius: 35px;
     text-align: center;
     margin: auto;
-}
-#more{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background:linear-gradient(90deg, #2e4e94, #6effa3 );
-    color: #ffff;
-    border: none;
 }

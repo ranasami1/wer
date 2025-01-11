@@ -58,11 +58,29 @@ function colorChange(buttonId) {
         alertMessage.classList.add("toggle_form");
     }
 }
-function raduisaddColor(event){
-    let gameCard = event.currentTarget;
-        gameCard.className += " game_card_active";
+
+function toggleShow(btnId){
+  //let showBtn = document.getElementById("more");
+  let hiddenData = document.getElementsByClassName("hidden");
+  //let visibleData = document.getElementsByClassName("visible");
+    if(btnId === "more"){
+        hiddenData.classList.add("toggle_form")
+    }else{
+        console.log("test");
+    }
 }
-function raduisremoveColor(event){
-    let gameCard = event.currentTarget;
-        gameCard.classList.remove("game_card_active");
+function toggleGameList() {
+    let gameList = document.getElementById("hidden");
+    let toggleButton = document.getElementById("toggleButton");
+
+    // Get the current computed display style
+    let currentDisplay = window.getComputedStyle(gameList).display;
+
+    if (currentDisplay === "none") {
+        gameList.style.display = "flex"; // Expand
+        toggleButton.innerHTML = "Show Less ⬆";
+    } else {
+        gameList.style.display = "none"; // Collapse
+        toggleButton.innerHTML = "Show More ⬇";
+    }
 }
