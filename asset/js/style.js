@@ -14,27 +14,30 @@ function updateFlag() {
 document.getElementById("country-select").addEventListener("change", updateFlag);
 
 //disable refreshing behavior onSubmit
-const form = document.querySelector("form"); 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    console.log('Form submitted without refreshing the page!');
-});
+let form = document.querySelector("form"); 
+if(form !== null){
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        console.log('Form submitted without refreshing the page!');
+    });
+}
+
 //initialize swiper
-const swiper = new Swiper('slider-wrapper', {
+const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   
-  });
-  function colorChange(buttonId) {
+});
+function colorChange(buttonId) {
     let signBtn = document.getElementById("sign");
     let registerBtn = document.getElementById("register");
     let signForm = document.getElementById("signin_form");
     let registerForm = document.getElementById("register_form");
-    let alertMessage = document.getElementById("alert")
-
+    let alertMessage = document.getElementById("alert");
+    
     if (buttonId === "sign") {
         signBtn.classList.add("active");
         signBtn.classList.remove("notActive");
@@ -55,5 +58,11 @@ const swiper = new Swiper('slider-wrapper', {
         alertMessage.classList.add("toggle_form");
     }
 }
- 
- 
+function raduisaddColor(event){
+    let gameCard = event.currentTarget;
+        gameCard.className += " game_card_active";
+}
+function raduisremoveColor(event){
+    let gameCard = event.currentTarget;
+        gameCard.classList.remove("game_card_active");
+}
