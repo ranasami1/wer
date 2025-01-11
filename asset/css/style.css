@@ -215,9 +215,10 @@ a{
     cursor: pointer;
     background: linear-gradient(90deg, #1e616f, #5fb48f);
 }
-h2{
+h2,h1{
     font-weight: bold;
     padding: 10px 0;
+    color: #ffff;
 }
 #sign-registersec{
     background-color: #051c1e;
@@ -391,4 +392,8 @@ form .form-group .form-control:focus{
     color: #fff;
     position: relative;
     bottom: -20px;
+}
+.sectionHead{
+    background: linear-gradient(90deg, #6effa3,  #1583a5);
+    
 }
