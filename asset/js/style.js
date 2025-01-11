@@ -25,8 +25,7 @@ if(form !== null){
 //initialize swiper
 let swiper = new Swiper('.wrapper', {
     loop: true,
-    slidesPerView: 5,
-    spaceBetween: 30,
+    slidesPerView:4,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
