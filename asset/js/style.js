@@ -23,13 +23,14 @@ if(form !== null){
 }
 
 //initialize swiper
-const swiper = new Swiper('.swiper', {
+let swiper = new Swiper('.wrapper', {
     loop: true,
+    slidesPerView: 5,
+    spaceBetween: 30,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
 });
 function colorChange(buttonId) {
     let signBtn = document.getElementById("sign");
