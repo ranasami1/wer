@@ -292,7 +292,8 @@ form .form-group .form-control:focus{
 #rows{
     background-color: #113331;
     border-radius: 40px;
-    min-height: 300px
+    min-height: 300px;
+    overflow:visible;
 }
 #card{
     width: 280px;
@@ -374,4 +375,20 @@ form .form-group .form-control:focus{
     border-radius: 35px;
     text-align: center;
     margin: auto;
+}
+#hidden{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 1s ease, opacity 1s ease;
+}
+#toggleButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background:linear-gradient(90deg, #6effa3,  #1583a5);
+    color: #fff;
+    position: relative;
+    bottom: -20px;
 }

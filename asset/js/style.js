@@ -73,14 +73,13 @@ function toggleGameList() {
     let gameList = document.getElementById("hidden");
     let toggleButton = document.getElementById("toggleButton");
 
-    // Get the current computed display style
-    let currentDisplay = window.getComputedStyle(gameList).display;
-
-    if (currentDisplay === "none") {
-        gameList.style.display = "flex"; // Expand
-        toggleButton.innerHTML = "Show Less ⬆";
+    if (gameList.style.height === "0px" || gameList.style.height === "") {
+        gameList.style.height = gameList.scrollHeight + "px"; // Expands to actual content height
+        gameList.style.opacity = "1";
+        toggleButton.innerHTML = "▲";
     } else {
-        gameList.style.display = "none"; // Collapse
-        toggleButton.innerHTML = "Show More ⬇";
+        gameList.style.height = "0px"; // Collapses
+        gameList.style.opacity = "0";
+        toggleButton.innerHTML = "▼";
     }
 }
