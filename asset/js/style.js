@@ -25,7 +25,7 @@ if(form !== null){
 //initialize swiper
 let swiper = new Swiper('.wrapper', {
     loop: true,
-    slidesPerView: 2, // Default for larger screens
+    slidesPerView: 1, // Default for larger screens
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

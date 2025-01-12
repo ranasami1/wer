@@ -297,7 +297,6 @@ form .form-group .form-control:focus{
     overflow:visible;
 }
 #card{
-    width: 280px;
     min-height: 220px;
     background-color:#1a413a;
     border-radius: 40px;
@@ -406,7 +405,6 @@ ol li a{
     color: #ffff;
     display: flex;
     text-align: right;
-    padding: 10px;
 }
 ol li a::after{
     border-bottom: 1px dotted #ffff;
