@@ -25,12 +25,20 @@ if(form !== null){
 //initialize swiper
 let swiper = new Swiper('.wrapper', {
     loop: true,
-    slidesPerView:4,
+    slidesPerView: 2, // Default for larger screens
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        // When screen width is 768px or less
+        768: {
+            slidesPerView: 4
+        }
+    }
 });
+
+  
 function colorChange(buttonId) {
     let signBtn = document.getElementById("sign");
     let registerBtn = document.getElementById("register");
