@@ -298,7 +298,7 @@ form .form-group .form-control:focus{
 }
 #card{
     width: 280px;
-    height: 220px;
+    min-height: 220px;
     background-color:#1a413a;
     border-radius: 40px;
     color: #ffff;
