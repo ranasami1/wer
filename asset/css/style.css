@@ -395,5 +395,21 @@ form .form-group .form-control:focus{
 }
 .sectionHead{
     background: linear-gradient(90deg, #6effa3,  #1583a5);
-    
+}
+.text_content{
+    color: #ffff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+ol li a{
+    color: #ffff;
+    display: flex;
+    text-align: right;
+    padding: 10px;
+}
+ol li a::after{
+    border-bottom: 1px dotted #ffff;
+    content: '';
+    flex: 1;
 }
