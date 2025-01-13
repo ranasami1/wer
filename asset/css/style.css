@@ -411,3 +411,20 @@ ol li a::after{
     content: '';
     flex: 1;
 }
+/*game page*/
+#left-side {
+    color: #fff;
+}
+#left-side img{
+    width: 40px;
+}
+#banner{
+    background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
+}
+#gameImage{
+    width:320px;
+    height:380px;
+    background-image:url(../img/gameImg.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+}
