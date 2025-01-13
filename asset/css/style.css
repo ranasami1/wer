@@ -44,7 +44,7 @@ body{
     font-size: 14px;
     height: auto;
 }
-h6{
+h6,h5{
     font-family:"Bw Modelica DEMO Black" ;
     font-weight:bold;
     color: #ffff;
