@@ -215,7 +215,7 @@ a{
     cursor: pointer;
     background: linear-gradient(90deg, #1e616f, #5fb48f);
 }
-h2,h1{
+h2,h1,h4{
     font-weight: bold;
     padding: 10px 0;
     color: #ffff;
@@ -293,7 +293,7 @@ form .form-group .form-control:focus{
 #rows{
     background-color: #113331;
     border-radius: 40px;
-    min-height: 300px;
+    min-height: 200px;
     overflow:visible;
 }
 #card{
@@ -412,19 +412,74 @@ ol li a::after{
     flex: 1;
 }
 /*game page*/
-#left-side {
-    color: #fff;
+/*.voucher-card, .payment-card {
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-#left-side img{
-    width: 40px;
+.voucher-card:hover, .payment-card:hover {
+    transform: scale(1.05);
+}
+.selected {
+    border: 2px solid #ffcc00;
+}*/
+#left-side{
+    color: #fff;
+    font-size: 14px;
+}
+#heart{
+    max-width: 50px;
 }
 #banner{
     background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
+    color: #ffff;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 5px 10px;
 }
-#gameImage{
-    width:320px;
-    height:380px;
-    background-image:url(../img/gameImg.png);
-    background-size:  cover;
-    background-repeat: no-repeat;
+#banner img{
+    width: 30px;
+}
+#riotId{
+    background: #0d2728; 
+    border: .5px solid #082327; 
+    border-radius: 20px;
+    padding: 5px;
+    color: #65BA8E;
+    outline: none; 
+    width: 93%;
+}
+#riotId::placeholder{
+    color: #65BA8E;
+}
+#signN{
+    width: 40px;
+    height:40px;
+    background:linear-gradient(90deg, #6effa3,  #1583a5);
+    border-radius: 20px;
+    position: relative;
+    bottom: 50%;
+    right: 50%;
+    text-align: center;
+    color: #ffff;
+    font-weight: bold;
+}
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #C0392B;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.live-badge .count {
+    background-color: #F4D03F;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 8px;
 }

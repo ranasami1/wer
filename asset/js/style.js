@@ -92,3 +92,28 @@ function toggleGameList(event) {
         toggleButton.innerHTML = "▼";
     }
 }
+document.querySelectorAll('.voucher-card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelectorAll('.voucher-card').forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+});
+
+document.querySelectorAll('.payment-card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelectorAll('.payment-card').forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+});
+
+document.getElementById('purchaseBtn').addEventListener('click', function() {
+    let selectedVoucher = document.querySelector('.voucher-card.selected');
+    let selectedPayment = document.querySelector('.payment-card.selected');
+    let riotId = document.getElementById('riotId').value;
+
+    if (!selectedVoucher || !selectedPayment || riotId.trim() === '') {
+        alert('Please complete all fields before proceeding.');
+        return;
+    }
+    alert(`Purchased ${selectedVoucher.dataset.value} using ${selectedPayment.dataset.method} for Riot ID: ${riotId}`);
+});
