@@ -344,7 +344,7 @@ form .form-group .form-control:focus{
     position: relative;
     overflow: hidden; 
 }
-.game-card:hover,#voucherCard:hover{
+.game-card:hover,#voucherCard:hover,#paymentCard:hover{
     border: 2px solid;
     border-image-source: linear-gradient(to right,#6effa3,  #1583a5);
     border-image-slice: 1;
@@ -412,17 +412,6 @@ ol li a::after{
     content: '';
     flex: 1;
 }
-/*game page*/
-/*.voucher-card, .payment-card {
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-.voucher-card:hover, .payment-card:hover {
-    transform: scale(1.05);
-}
-.selected {
-    border: 2px solid #ffcc00;
-}*/
 #left-side{
     color: #fff;
     font-size: 14px;
@@ -445,17 +434,35 @@ h4{
 #banner img{
     width: 30px;
 }
-#riotId{
+#game-list{
+        list-style: none;
+}
+#game-list li{     
+        margin-bottom: 12px;
+}
+#game-list li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3BA55C, #4F81C7);
+    display: inline-block;
+    margin-right: 10px;
+}
+#game-list li a{
+    display:inline;
+}
+#riotId,#Email{
     background: #0d2728; 
     border: .5px solid #082327; 
     border-radius: 20px;
     padding: 5px;
-    color: #65BA8E;
+    color: #65ba8e69;
     outline: none; 
     width: 93%;
 }
-#riotId::placeholder{
-    color: #65BA8E;
+#riotId::placeholder,#Email::placeholder{
+    color: #65ba8e69;
 }
 #signN{
     width: 40px;
@@ -523,16 +530,16 @@ h4{
     left: 50%;
     top:-40px;
 }
-#voucherCard #v-price{
+#v-price{
     color: #0178BD;
     background-color: #FFFFFF;
     width: 100%;
 }
-#voucherCard #oldPrice{
+#oldPrice{
     margin: 0 !important;
     text-decoration: line-through 1.5px #ffff;
 }
-#voucherCard #discount{
+#discount{
     width: 40px;
     position: relative;
     left: 55px;
@@ -541,4 +548,19 @@ h4{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
+}
+#diffPayment{
+    background:#C0392B;
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 30px;    
+}
+#diffPayment a{
+    color: #ffff !important;
+}
+.last-sec{
+    color: #ffff !important;
 }

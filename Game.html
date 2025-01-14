@@ -99,7 +99,7 @@
                             <p class="m-0">Digital download</p>
                         </div>
                     </div>
-                    <ul class="py-2">
+                    <ul id="game-list" class="py-2">
                         <li>Codashop offers easy, safe and convenient PUBGM UC Top ups.</li>
                         <li>Pay conveniently with Paypal, and VISA.</li>
                         <li>Simply select your preferred PUBG Mobile voucher option, complete the payment, and you will
@@ -124,7 +124,8 @@
                                 <input id="riotId" type="text" placeholder="Enter your Riot ID">
                                 <img style="width: 30px;" src="./asset/img/question.png">
                             </div>
-                            <p style="font-size: 8px; width: 90%;">To find your Riot ID, please select your profile page
+                            <p style="font-size: 8px; width: 90%;color: #65ba8e69;">To find your Riot ID, please select
+                                your profile page
                                 and copy your Riot ID + tag using the button next to your Riot ID. Please remove spaces
                                 between letters if applicable (example: Westbourne#SEA).</p>
                         </div>
@@ -236,10 +237,10 @@
                             <h6>Select payment</h6>
                         </div>
                         <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
                                 <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">60 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
+
+                                    <img src="./asset/img/Visa.png" style="width: 40px;">
                                 </div>
                                 <div class="d-flex align-items-start flex-column">
                                     <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
@@ -249,75 +250,115 @@
                                     -10%
                                 </div>
                             </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
                                 <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
 
+                                    <img src="./asset/img/paypal.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                                <div class="d-flex flex-column align-items-center">
+
+                                    <img src="./asset/img/Group 70.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                                <div class="d-flex flex-column align-items-center">
+
+                                    <img src="./asset/img/Group 70.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                                <div class="d-flex flex-column align-items-center">
+
+                                    <img src="./asset/img/fawry.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                                <div class="d-flex flex-column align-items-center">
+
+                                    <img src="./asset/img/orangeMoney.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
+                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                                <div class="d-flex flex-column align-items-center">
+
+                                    <img src="./asset/img/Vodafone.png" style="width: 40px;">
+                                </div>
+                                <div class="d-flex align-items-start justify-content-start flex-column">
+                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                    <p id="oldPrice">00.00EGP</p>
+                                </div>
+                                <div id="discount">
+                                    -10%
+                                </div>
+                            </div>
                         </div>
                         <div id="signN">
                             <p>3</p>
+                        </div>
+                        <div id="diffPayment"><a href="#">I want to use a different payment method</a></div>
+                    </div>
+                    <div id="rows" class="d-flex align-items-center flex-column">
+                        <div id="Hline"></div>
+                        <div id="secHeader">
+                            <h6>BUY!</h6>
+                        </div>
+                        <div class="container d-flex align-items-center justify-content-center flex-column last-sec">
+                            <p>Please Double-check your email; we'll send your voucher code there.</p>
+                            <input id="Email" type="text" placeholder="Email address">
+                            <div class="d-flex flex-column">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="codashopNews" checked>
+                                    <label class="form-check-label" for="codashopNews">
+                                        Yes, send me messages with exclusive Codashop news and promotions.
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="smsNews">
+                                    <label class="form-check-label" for="smsNews">
+                                        Yes, I would like to receive news and promotions via SMS.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="signN">
+                            <p>4</p>
                         </div>
                     </div>
                 </div>
