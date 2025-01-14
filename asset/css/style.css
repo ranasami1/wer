@@ -215,7 +215,7 @@ a{
     cursor: pointer;
     background: linear-gradient(90deg, #1e616f, #5fb48f);
 }
-h2,h1,h4{
+h2,h1{
     font-weight: bold;
     padding: 10px 0;
     color: #ffff;
@@ -344,7 +344,7 @@ form .form-group .form-control:focus{
     position: relative;
     overflow: hidden; 
 }
-.game-card:hover{
+.game-card:hover,#voucherCard:hover{
     border: 2px solid;
     border-image-source: linear-gradient(to right,#6effa3,  #1583a5);
     border-image-slice: 1;
@@ -426,6 +426,11 @@ ol li a::after{
     color: #fff;
     font-size: 14px;
 }
+h4{
+    font-family:"Bw Modelica DEMO Black" ;
+    font-weight:bold;
+    color: #65BA8E;
+}
 #heart{
     max-width: 50px;
 }
@@ -482,4 +487,57 @@ ol li a::after{
     padding: 5px 10px;
     border-radius: 50%;
     margin-right: 8px;
+}
+#voucherCard{
+    width: 110px;
+    height: 130px;
+    background-color: #0d2728;
+    overflow: hidden;
+    border-radius: 20px;
+    font-size: 10px;  
+}
+.Starred{
+    overflow: visible !important;
+    background-color: #1a413a !important;
+}
+.Regular{
+    background-color: #1a413a !important;
+}
+#voucherCard #badge{
+    color: black;
+    font-weight: bold;
+    background:#fdcb41;
+    width: 80px;
+    position: relative;
+    right: 20px;
+    text-align: center;
+    transform: rotateY(0deg) rotate(-45deg);
+    height: 15px;
+
+}
+#voucherCard i{
+    color: #8f760b4c;
+    position: relative;
+    font-size: 16px;
+    left: 50%;
+    top:-40px;
+}
+#voucherCard #v-price{
+    color: #0178BD;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+#voucherCard #oldPrice{
+    margin: 0 !important;
+    text-decoration: line-through 1.5px #ffff;
+}
+#voucherCard #discount{
+    width: 40px;
+    position: relative;
+    left: 55px;
+    color: #fff;
+    background-color: #0178BD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
 }
