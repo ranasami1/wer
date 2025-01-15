@@ -564,3 +564,53 @@ h4{
 .last-sec{
     color: #ffff !important;
 }
+.checkbox{
+    -webkit-appearance: none;
+    width: 20px;
+    height:20px;
+    border-radius: 5px;
+    border:2px solid #082327;
+    cursor: pointer;
+    background: transparent;
+    margin: 0 5px 0 0;
+
+}
+.checkbox:checked{
+    border: 2px solid linear-gradient(90deg, #6effa3,  #1583a5);
+}
+.checkbox:checked::before{
+    background: linear-gradient(90deg, #6effa3,  #1583a5);
+    display: block;
+}
+.checkbox::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color:linear-gradient(90deg, #6effa3,  #1583a5);
+    position: relative;
+    top: 30%;
+    left: 30%;
+}
+#buyNow{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 2px solid;
+    border-image-source: linear-gradient(to right, #6effa3, #1583a5);
+    border-image-slice: 2;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#buyNow:hover{
+    background: linear-gradient(to right, #6effa3, #1583a5);
+    color: white;
+}
+
+  
+  
