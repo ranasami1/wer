@@ -156,9 +156,22 @@ a{
     padding: 5px 20px; 
     width: 50%;
 }
-@media (width<=767px)  { 
+@media (width<=768px) { 
     .custom-search-bar{
         width: 70%;
+    }
+    #wallet-cart{
+        position: absolute;
+        top: 20px;
+        right:30px;
+    }
+    #headerMenu{
+        position: absolute;
+        top: 20px;
+        left:30px;
+    }
+    #headerSec2 div:nth-child(1){
+        border: none !important;
     }
  }
 .custom-search-bar input {
