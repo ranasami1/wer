@@ -153,9 +153,14 @@ a{
 .custom-search-bar {
     background-color:#051518; 
     border-radius: 30px;
-    padding: 5px 20px;
-    width:45%;
+    padding: 5px 20px; 
+    width: 50%;
 }
+@media (width<=767px)  { 
+    .custom-search-bar{
+        width: 70%;
+    }
+ }
 .custom-search-bar input {
     background: none; 
     border: none; 
@@ -273,7 +278,7 @@ form .form-group .form-control:focus{
 .notActive{
     background: #051518;
 }
-#Register-btn{
+#Register-btn,#registerBtn{
     width:120px;
     margin: auto;
     border-radius: 35px;
