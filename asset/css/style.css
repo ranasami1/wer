@@ -190,7 +190,7 @@ a{
     }
  }
  #game-name {
-    font-size: 1.5vw; 
+    font-size: 1.7vw; 
     }
 .custom-search-bar input {
     background: none; 
@@ -360,14 +360,14 @@ form .form-group .form-control:focus{
     padding: auto;
 }
 #mostRecentRate .fa-star{
-    font-size: .9vw;
+    font-size: 1.7vw;
     color: #4b5939;
 }
 #mostRecentRate .fa-star.checked{
     color:#f4cd5c;
 }
 #date,#price{
-    font-size: .9vw;
+    font-size: 1.5vw;
 }
 .fa-star{
     color: #051518;
@@ -424,7 +424,7 @@ form .form-group .form-control:focus{
     background: #65ba8e;
     color: white;
     padding: 3px 5px 0;
-    font-size: .9vw;
+    font-size: 1.5vw;
     font-weight: bolder;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
