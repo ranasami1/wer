@@ -39,20 +39,20 @@
             style="border-color:#65BA8E !important;border-width:4px !important;">
             <a href="index.html"><img id="websiteLogo" src="./asset/img/LOGOI-05 1.png"></a>
             <nav class="navbar navbar-expand-sm">
-                        <ul class="navbar-nav flex-row gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TOURNAMENT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                        </ul>
+                <ul class="navbar-nav flex-row gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TOURNAMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
             </nav>
             <div id="login-register" class="d-none d-md-none d-lg-block">
                 <a href="register.html"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
@@ -83,77 +83,250 @@
             <div id="secHeader">
                 <h6>MOST RECENT</h6>
             </div>
-                <div>
-                    <ul 
-                    class="d-flex align-items-center justify-content-center flex-wrap pt-5 gap-5 list-unstyled">
-                    <li class="game-card" class="d-flex justify-content-between">
-                        <a href="./Game.html">
-                            <img src="./asset/img/game.png" alt="PUBG Mobile">
-                            <div class="d-flex align-items-start justify-content-between">
-                                <div>
-                                    <p style="font-size:10px;">Base Game</p>
-                                    <h5>PUBG</h5>
-                                    <p id="price" >00.00 EGP</p>
+            <div id="visible" class="row d-flex align-items-center">
+                <diV class="col-8">
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                 </div>
-                                <div id="mostRecentRate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
                                 </div>
-                            </div>
-                           
-                            <div class="discount-badge">-10%</div>
-                        </a>
-                    </li>
-                    <li class="game-card" class="d-flex justify-content-between">
-                        <a href="./Game.html">
-                            <img src="./asset/img/game.png" alt="PUBG Mobile">
-                            <div class="d-flex align-items-start justify-content-between">
-                                <div>
-                                    <p style="font-size:10px;">Base Game</p>
-                                    <h5>PUBG</h5>
-                                    <p id="price" >00.00 EGP</p>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
+                </diV>
+                <div class="col-4">
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    
                                 </div>
-                                <div id="mostRecentRate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                           
-                            <div class="discount-badge">-10%</div>
-                        </a>
-                    </li>
-                    <li class="game-card" class="d-flex justify-content-between">
-                        <a href="./Game.html">
-                            <img src="./asset/img/game.png" alt="PUBG Mobile">
-                            <div class="d-flex align-items-start justify-content-between">
-                                <div>
-                                    <p style="font-size:10px;">Base Game</p>
-                                    <h5>PUBG</h5>
-                                    <p id="price" >00.00 EGP</p>
+                               <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    
                                 </div>
-                                <div id="mostRecentRate">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                           
-                            <div class="discount-badge">-10%</div>
-                        </a>
-                    </li>
-                </ul>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+            </div>
+            <div id="hidden" class="row d-flex align-items-center">
+                <diV class="col-8">
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
+                </diV>
+                <div class="col-4">
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                               <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex gap-3">
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                        <li id="game-card" class="d-flex justify-content-between">
+                            <a href="./Game.html">
+                                <img src="./asset/img/game.png" alt="PUBG Mobile">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div>
+                                        <p style="font-size:10px;">Base Game</p>
+                                        <h5>PUBG</h5>
+                                        <p id="price">00.00 EGP</p>
+                                    </div>
+                                    <div id="mostRecentRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </div>
+                                <div class="discount-badge">-10%</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
             <div class="toggle-btn">
                 <button class="toggleButton" onclick="toggleGameList(event)">▼</button>
-
             </div>
         </div>
 
@@ -162,98 +335,98 @@
             <div id="secHeader">
                 <h6>EXCLUSIVE OFFER</h6>
             </div>
-            <div class="d-flex align-items-center justify-content-center flex-column">
+            <div id="exclusiveOffer" class="d-flex align-items-center justify-content-center flex-column">
                 <ul id="visible"
-                    class="d-flex align-items-center justify-content-center flex-wrap pt-5 gap-5 list-unstyled">
-                    <li class="game-card">
+                    class="d-flex align-items-center justify-content-center flex-wrap pt-3 gap-5 list-unstyled">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
                 </ul>
                 <ul id="hidden" class="d-flex align-items-center justify-content-center flex-wrap gap-5 list-unstyled">
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
-                    <li class="game-card">
+                    <li id="game-card">
                         <a href="./Game.html">
                             <img src="./asset/img/game.png" alt="PUBG Mobile">
                             <p style="font-size:10px;">Base Game</p>
                             <h5>PUBG</h5>
-                            <p id="price" >00.00 EGP</p>
+                            <p id="price">00.00 EGP</p>
                             <div class="discount-badge">-10%</div>
                         </a>
                     </li>
@@ -261,7 +434,6 @@
             </div>
             <div class="toggle-btn">
                 <button class="toggleButton" onclick="toggleGameList(event)">▼</button>
-
             </div>
         </div>
 
@@ -503,7 +675,7 @@
             <p class="m-auto p-3" id="textsec"><span>I'm Alive</span> 2022 CREATED BY INNOVALZ.</p>
         </div>
     </div>
-    
+
     <script src="./asset/js/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

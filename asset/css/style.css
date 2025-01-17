@@ -179,7 +179,7 @@ a{
     #visible li:nth-child(n+4) {
         display: none;
     }
-    .game-card {
+    #game-card {
      width: 120px;
     }
     #websiteLogo{
@@ -315,14 +315,14 @@ form .form-group .form-control:focus{
     border-radius: 15px;
     padding: 20px;
 }
-.game-card img {
+#game-card img {
     border-radius: 10px;
     width: fit-content;
 }
-.game-card a p{
+#game-card a p{
     margin: 0 !important;
 }
-.game-card a h5{
+#game-card a h5{
  margin: 0 !important;
 }
 .btn-custom {
@@ -335,6 +335,7 @@ form .form-group .form-control:focus{
     border-radius: 40px;
     min-height: 200px;
     overflow:visible;
+    padding: 0 20px;
 }
 #card{
     min-height: 220px;
@@ -385,8 +386,8 @@ form .form-group .form-control:focus{
     top: -5px;
     text-align: center;
 }
-.game-card {
-    max-width: 180px;
+#game-card{
+    max-width: auto;
     background: #1a413a;
     border-radius: 20px;
     padding: 10px;
@@ -395,14 +396,18 @@ form .form-group .form-control:focus{
     position: relative;
     overflow: hidden; 
 }
-.game-card:hover,#voucherCard:hover,#paymentCard:hover{
+#exclusiveOffer #game-card{
+    max-width: 180px !important;
+}
+
+#game-card:hover,#voucherCard:hover,#paymentCard:hover{
     border: 2px solid;
     border-image-source: linear-gradient(to right,#6effa3,  #1583a5);
     border-image-slice: 1;
     transition-timing-function:ease;
     background: #0e2627 !important;
 }
-.game-card img {
+#game-card img {
     width: 100%;
     border-radius: 10px;
 }
@@ -414,6 +419,7 @@ form .form-group .form-control:focus{
     color: white;
     padding: 3px 5px 0;
     font-size: 12px;
+    font-weight: bolder;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
