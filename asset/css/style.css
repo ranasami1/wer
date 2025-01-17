@@ -185,6 +185,21 @@ a{
     #websiteLogo{
         width: 170px;
     }
+    #price{
+        font-size: 8px;
+        padding-bottom: 10px;
+    }
+    #game-name{
+        font-size: smaller;
+    }
+    .discount-badge{
+        font-size: xx-small;
+        padding: 2px;
+    }
+    #card{
+        width: auto !important;
+    }
+   
  }
 .custom-search-bar input {
     background: none; 
@@ -325,6 +340,7 @@ form .form-group .form-control:focus{
 #game-card a h5{
  margin: 0 !important;
 }
+
 .btn-custom {
     background-color: #5fa37b;
     color: white;
@@ -338,9 +354,10 @@ form .form-group .form-control:focus{
     padding: 0 20px;
 }
 #card{
+    max-width: 270px !important;
     min-height: 220px;
     background-color:#1a413a;
-    border-radius: 40px;
+    border-radius: 30px;
     color: #ffff;
 }
 #card #rate p,#date{
@@ -361,7 +378,7 @@ form .form-group .form-control:focus{
     color:#f4cd5c;
 }
 #date,#price{
-    font-size: 12px;
+    font-size:12px;
 }
 .fa-star{
     color: #051518;
@@ -397,7 +414,7 @@ form .form-group .form-control:focus{
     overflow: hidden; 
 }
 #exclusiveOffer #game-card{
-    max-width: 180px !important;
+    max-width: 200px !important;
 }
 
 #game-card:hover,#voucherCard:hover,#paymentCard:hover{
