@@ -446,9 +446,21 @@ h4{
     font-weight:bold;
     color: #65BA8E;
 }
-#heart{
-    max-width: 50px;
+.image-container {
+    position: relative; 
 }
+.main-image {
+    display: block;
+}
+.heart-icon {
+    position: absolute;
+    top: 40px; 
+    left: -20px;
+    width: 45px; 
+    height: 45px;
+    z-index: 2;
+}
+
 #banner{
     background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
     color: #ffff;
