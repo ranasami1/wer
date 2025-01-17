@@ -185,13 +185,7 @@ a{
     #websiteLogo{
         width: 170px;
     }
-    #game-name {
-        font-size: 60% 
-    }
  }
- #game-name {
-    font-size: 1.7vw; 
-    }
 .custom-search-bar input {
     background: none; 
     border: none; 
@@ -338,7 +332,7 @@ form .form-group .form-control:focus{
 }
 #rows{
     background-color: #113331;
-    border-radius: 20px;
+    border-radius: 40px;
     min-height: 200px;
     overflow:visible;
     padding: 0 20px;
@@ -357,17 +351,17 @@ form .form-group .form-control:focus{
 #mostRecentRate{
     background-color:#12332e;
     border-radius: 5px;
-    padding: auto;
+    padding: 0 5px;
 }
 #mostRecentRate .fa-star{
-    font-size: 1.7vw;
+    font-size: 10px;
     color: #4b5939;
 }
 #mostRecentRate .fa-star.checked{
     color:#f4cd5c;
 }
 #date,#price{
-    font-size: 1.5vw;
+    font-size: 12px;
 }
 .fa-star{
     color: #051518;
@@ -396,7 +390,7 @@ form .form-group .form-control:focus{
     max-width: auto;
     background: #1a413a;
     border-radius: 20px;
-    padding: 8px;
+    padding: 10px;
     color: white;
     text-align:left;
     position: relative;
@@ -424,7 +418,7 @@ form .form-group .form-control:focus{
     background: #65ba8e;
     color: white;
     padding: 3px 5px 0;
-    font-size: 1.5vw;
+    font-size: 12px;
     font-weight: bolder;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -546,7 +540,7 @@ h4{
     border-radius: 20px;
     position: relative;
     bottom: 50%;
-    right: 52%;
+    right: 50%;
     text-align: center;
     color: #ffff;
     font-weight: bold;
@@ -702,4 +696,3 @@ h4{
     position: relative;
     bottom: 100%;
 }
-  
