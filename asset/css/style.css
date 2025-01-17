@@ -28,15 +28,15 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
-    padding: 0;
-    margin: 0;
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box; 
 }
 body{
     font-family:'Bw Modelica DEMO';
     font-weight:normal;
     color: #65ba8e;
-    box-sizing: border-box;
     background-color:#082327;
 }
 #footer,#headerSec2{
@@ -173,6 +173,12 @@ a{
     #headerSec2 div:nth-child(1){
         border: none !important;
     }
+    #visible li:nth-child(n+4) {
+        display: none;
+    }
+    .game-card {
+     width: 120px;
+    }
  }
 .custom-search-bar input {
     background: none; 
@@ -303,12 +309,15 @@ form .form-group .form-control:focus{
     border-radius: 15px;
     padding: 20px;
 }
-.game-card {
-    border-radius: 10px;
-}
 .game-card img {
     border-radius: 10px;
-    width: 300px;
+    width: fit-content;
+}
+.game-card a p{
+    margin: 0 !important;
+}
+.game-card a h5{
+ margin: 0 !important;
 }
 .btn-custom {
     background-color: #5fa37b;
@@ -360,10 +369,10 @@ form .form-group .form-control:focus{
     text-align: center;
 }
 .game-card {
-    width: 180px;
+    max-width: 180px;
     background: #1a413a;
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px;
     color: white;
     text-align:left;
     position: relative;
@@ -386,8 +395,8 @@ form .form-group .form-control:focus{
     right: 10px;
     background: #65ba8e;
     color: white;
-    padding: 3px 10px 0;
-    font-size: 14px;
+    padding: 3px 5px 0;
+    font-size: 12px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -464,7 +473,7 @@ h4{
 #banner{
     background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
     color: #ffff;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 14px;
     padding: 5px 10px;
 }
