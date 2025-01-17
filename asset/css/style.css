@@ -56,6 +56,9 @@ a{
     font-family:'Bw Modelica DEMO';
     color:#65ba8e;
 }
+#websiteLogo{
+    max-width: 300px;
+}
 .payment{
     height: 45px;
 }
@@ -178,6 +181,9 @@ a{
     }
     .game-card {
      width: 120px;
+    }
+    #websiteLogo{
+        width: 170px;
     }
  }
 .custom-search-bar input {
