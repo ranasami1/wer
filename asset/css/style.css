@@ -347,7 +347,18 @@ form .form-group .form-control:focus{
     font-weight: normal;
     color: #3E7D64;
 }
-
+#mostRecentRate{
+    background-color:#12332e;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+#mostRecentRate .fa-star{
+    font-size: 10px;
+    color: #4b5939;
+}
+#mostRecentRate .fa-star.checked{
+    color:#f4cd5c;
+}
 #date,#price{
     font-size: 12px;
 }
