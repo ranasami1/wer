@@ -111,6 +111,9 @@ a{
     color: white;
     text-decoration: none;
 }
+#websiteLogo{
+    width: 350px;
+}
 .nav-link {
     font-family: 'Bw Modelica SS02 DEMO Medium Ultra Cond';
     font-weight: medium;
