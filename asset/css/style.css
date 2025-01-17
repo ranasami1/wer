@@ -56,9 +56,6 @@ a{
     font-family:'Bw Modelica DEMO';
     color:#65ba8e;
 }
-#websiteLogo{
-    max-width: 300px;
-}
 .payment{
     height: 45px;
 }
@@ -166,12 +163,12 @@ a{
     #wallet-cart{
         position: absolute;
         top: 20px;
-        right:30px;
+        right:5px;
     }
     #headerMenu{
         position: absolute;
         top: 20px;
-        left:30px;
+        left:5px;
     }
     #headerSec2 div:nth-child(1){
         border: none !important;
