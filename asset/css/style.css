@@ -206,6 +206,9 @@ a{
     #gridCards li:nth-child(n+3) {
         display: none;
     }
+    #mostPop li:nth-child(n+4){
+       display: none;
+    }
    
  }
 .custom-search-bar input {
@@ -347,7 +350,6 @@ form .form-group .form-control:focus{
 #game-card a h5{
  margin: 0 !important;
 }
-
 .btn-custom {
     background-color: #5fa37b;
     color: white;
@@ -355,10 +357,8 @@ form .form-group .form-control:focus{
 }
 #rows{
     background-color: #113331;
-    border-radius: 40px;
-    min-height: 200px;
+    border-radius: 20px;
     overflow:visible;
-    padding: 0 20px;
 }
 
 #card{
@@ -401,7 +401,7 @@ form .form-group .form-control:focus{
     text-align: center;
 }
 #game-card{
-    min-width: 90px;
+    max-width: 390px;
     background: #1a413a;
     border-radius: 20px;
     padding: 10px;
