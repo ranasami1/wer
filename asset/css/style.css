@@ -359,7 +359,7 @@ form .form-group .form-control:focus{
     background-color: #113331;
     border-radius: 20px;
     overflow:visible;
-    margin: 10px 0;
+    margin: 50px 0 !important;
 }
 
 #card{
