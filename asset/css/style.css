@@ -181,6 +181,7 @@ a{
     }
     #game-card {
      width: 120px;
+     max-height: 360px;
     }
     #websiteLogo{
         width: 170px;
