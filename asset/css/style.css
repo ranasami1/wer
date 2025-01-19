@@ -402,6 +402,7 @@ form .form-group .form-control:focus{
 }
 #game-card{
     max-width: 390px;
+    min-width: 80px;
     background: #1a413a;
     border-radius: 20px;
     padding: 10px;
