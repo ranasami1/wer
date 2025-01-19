@@ -38,6 +38,7 @@ let swiper = new Swiper('.wrapper', {
     }
 });
 
+
   
 function colorChange(buttonId) {
     let signBtn = document.getElementById("sign");
