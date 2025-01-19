@@ -71,7 +71,7 @@ function colorChange(buttonId) {
 function toggleGameList(event) {
     let toggleButton = event.target; // Get the clicked button
     let container = toggleButton.closest(".container"); // Find the nearest parent container
-    let gameList = container.querySelector(".hidden"); // Get the related hidden list
+    let gameList = container.querySelector("#hidden"); // Get the related hidden list
 
     if (gameList.style.height === "0px" || gameList.style.height === "") {
         gameList.style.height = gameList.scrollHeight + "px"; // Expands
