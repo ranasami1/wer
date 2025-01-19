@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Offers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f202d;
+      color: white;
+    }
+    .card {
+      background-color: #1d3b50;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .btn-custom {
+      background-color: #5bc0de;
+      color: white;
+      border: none;
+      border-radius: 20px;
+    }
+    .btn-custom:hover {
+      background-color: #31a2c3;
+    }
+    .img-overlay {
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-4">
+    <!-- Top Section -->
+    <div class="card mb-4 p-3">
+      <div class="d-flex flex-column align-items-center text-center">
+        <h3>GAME OFFERS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <button class="btn btn-custom">Get Price</button>
+      </div>
+    </div>
+
+    <!-- Lower Section -->
+    <div class="row g-3">
+      <!-- Fighting Game -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="fighting-game-image.jpg" class="card-img-top" alt="Fighting Game">
+          <div class="img-overlay d-flex justify-content-center align-items-center">
+            <h4 class="text-white">FIGHTING GAME</h4>
+          </div>
+        </div>
+      </div>
+      <!-- Coming Soon -->
+      <div class="col-6">
+        <div class="card position-relative">
+          <img src="coming-soon-image.jpg" class="card-img-top" alt="Coming Soon">
+          <div class="img-overlay d-flex justify-content-center align-items-center">
+            <h4 class="text-white">COMING SOON</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
