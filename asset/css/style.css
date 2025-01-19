@@ -199,6 +199,13 @@ a{
     #card{
         width: auto !important;
     }
+    #staredCards li:nth-child(n+2) {
+            display: none;
+        }
+    
+    #gridCards li:nth-child(n+3) {
+        display: none;
+    }
    
  }
 .custom-search-bar input {
@@ -353,6 +360,7 @@ form .form-group .form-control:focus{
     overflow:visible;
     padding: 0 20px;
 }
+
 #card{
     max-width: 270px !important;
     min-height: 220px;
@@ -365,18 +373,7 @@ form .form-group .form-control:focus{
     font-weight: normal;
     color: #3E7D64;
 }
-#mostRecentRate{
-    background-color:#12332e;
-    border-radius: 5px;
-    padding: 0 5px;
-}
-#mostRecentRate .fa-star{
-    font-size: 10px;
-    color: #4b5939;
-}
-#mostRecentRate .fa-star.checked{
-    color:#f4cd5c;
-}
+
 #date,#price{
     font-size:12px;
 }
@@ -412,6 +409,7 @@ form .form-group .form-control:focus{
     text-align:left;
     position: relative;
     overflow: hidden; 
+    margin: 5 10px;
 }
 #exclusiveOffer #game-card{
     max-width: 200px !important;
@@ -450,6 +448,14 @@ form .form-group .form-control:focus{
     border-radius: 35px;
     text-align: center;
     margin: auto;
+}
+.text-green{
+    color: #65BA8E !important;
+}
+#starsContainer{
+    background-color: #12332e;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 #hidden{
     height: 0;
