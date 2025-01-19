@@ -67,20 +67,11 @@ function colorChange(buttonId) {
     }
 }
 
-function toggleShow(btnId){
-  //let showBtn = document.getElementById("more");
-  let hiddenData = document.getElementsByClassName("hidden");
-  //let visibleData = document.getElementsByClassName("visible");
-    if(btnId === "more"){
-        hiddenData.classList.add("toggle_form")
-    }else{
-        console.log("test");
-    }
-}
+
 function toggleGameList(event) {
     let toggleButton = event.target; // Get the clicked button
     let container = toggleButton.closest(".container"); // Find the nearest parent container
-    let gameList = container.querySelector("#hidden"); // Get the related hidden list
+    let gameList = container.querySelector(".hidden"); // Get the related hidden list
 
     if (gameList.style.height === "0px" || gameList.style.height === "") {
         gameList.style.height = gameList.scrollHeight + "px"; // Expands
@@ -92,4 +83,6 @@ function toggleGameList(event) {
         toggleButton.innerHTML = "▼";
     }
 }
+
+  
 
