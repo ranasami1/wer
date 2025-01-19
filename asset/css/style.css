@@ -359,6 +359,7 @@ form .form-group .form-control:focus{
     background-color: #113331;
     border-radius: 20px;
     overflow:visible;
+    margin: 10px 0;
 }
 
 #card{
@@ -410,7 +411,6 @@ form .form-group .form-control:focus{
     text-align:left;
     position: relative;
     overflow: hidden; 
-    margin: 5 10px;
 }
 #exclusiveOffer #game-card{
     max-width: 200px !important;
