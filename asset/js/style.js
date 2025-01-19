@@ -54,7 +54,7 @@ function colorChange(buttonId) {
         signForm.classList.remove("toggle_form");
         registerBtn.classList.add("notActive");
         registerBtn.classList.remove("active");
-        history.pushState({}, '', '/SignIn');
+        
         alertMessage.classList.remove("toggle_form");
     } else {
         registerBtn.classList.add("active");
@@ -63,7 +63,7 @@ function colorChange(buttonId) {
         signForm.classList.add("toggle_form");
         signBtn.classList.add("notActive");
         signBtn.classList.remove("active");
-        history.pushState({}, '', '/Register');
+        
         alertMessage.classList.add("toggle_form");
     }
 }
