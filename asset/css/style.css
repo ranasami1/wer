@@ -265,7 +265,7 @@ a{
    margin-left: 95px;
    margin-top: 40px;
 }
-.signin-btn{
+.signin-btn,#RETURN{
     width: 150px;
     border-radius: 30px;
     font-size: 14px;
@@ -474,8 +474,10 @@ form .form-group .form-control:focus{
     position: relative;
     bottom: -20px;
 }
-.sectionHead{
-    background: linear-gradient(90deg, #6effa3,  #1583a5);
+.PrivacyHead{
+    background-image: url("../img/Final.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .text_content{
     color: #ffff;
@@ -720,4 +722,35 @@ h4{
     height: 90%;
     position: relative;
     bottom: 100%;
+}
+.CartHead{
+    background-image: url("../img/Final.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff9d;
+    font-size:x-large;
+    font-weight: bold;
+}
+.CartHead a{
+    color: #ffffff9d !important;
+    font-size:x-large;
+    font-weight: bold;
+}
+.CartHead a:hover{
+    color: #ffff !important;
+    transition: .5s ease-out;
+}
+.CartHead .active{
+    text-decoration: underline;
+    text-decoration-color:#65BA8E;
+    text-decoration-thickness:3px;
+    color: #ffff !important;
+    text-underline-offset: 10px;
+}
+#cart{
+    color: #ffff;
+}
+#cart p{
+    font-size: 12px;
+    
 }
