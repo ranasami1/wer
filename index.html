@@ -75,9 +75,32 @@
 
     <section class="container">
         <div class="row my-3">
-            <div class=" col-12 col-md-8">
-                <img class="col w-100 h-100" src="./asset/img/swiper.png">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-12 col-md-8" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./asset/img/swiper.png" class="img-fluid rounded main-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/swiper2.jpg" class="img-fluid rounded main-image" alt="...">
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./asset/img/swiper3.jpg" class="img-fluid rounded main-image" alt="...">
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
             <div class=" col-12 col-md-4">
                 <div class="row row-cols-md-1">
                     <div class="col-6">
@@ -605,7 +628,7 @@
                     <h6 class="mb-3">Join our newsletter!</h6>
                     <form action="./register.html">
                         <input type="email" class="input-box" placeholder="Your email address" required>
-                        <input type="submit"  class="signup-btn" value="SIGN UP"></input>
+                        <input type="submit" class="signup-btn" value="SIGN UP"></input>
                     </form>
                 </div>
             </div>
@@ -614,6 +637,7 @@
             <p class="m-auto p-3" id="textsec"><span>I'm Alive</span> 2022 CREATED BY INNOVALZ.</p>
         </div>
     </div>
+
 
     <script src="./asset/js/style.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
