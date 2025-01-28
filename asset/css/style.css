@@ -518,7 +518,7 @@ h4{
 }
 
 #banner{
-    background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
+    background:linear-gradient(90deg, #2e4e94, #59b392,  #1583a5);
     color: #ffff;
     border-radius: 10px;
     font-size: 12px;
@@ -529,6 +529,7 @@ h4{
 }
 #game-list{
         list-style: none;
+        font-size: 10px;
 }
 #game-list li{     
         margin-bottom: 12px;
