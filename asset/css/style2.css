@@ -9,3 +9,19 @@
 .cart-item img {
     max-width: 80px;
 }
+#notLogin {
+    font-size: 14px;
+}
+a{
+    display: inline;
+    text-decoration: underline;
+}
+input{
+    color: #65BA8E !important;
+}
+input::placeholder{
+    color: #65BA8E !important;
+}
+.display{
+    display: none;
+}

@@ -72,141 +72,92 @@
             </div>
         </div>
     </div>
-    <section id="cart" class="d-flex flex-column">
+    <section class="d-flex flex-column">
         <div class="CartHead text-center w-100 p-5 d-flex align-items-center justify-content-center gap-1 d-sm-flex d-none">
-            <a href="shoppingCart.html" class="active">SHOPPING CART</a> →
-            <a href="./Checkout.html">CHECKOUT</a> →
+            <a href="shoppingCart.html">SHOPPING CART</a> →
+            <a href="./Checkout.html" class="active">CHECKOUT</a> →
             <a href="#">ORDER COMPLETE</a>
         </div>
-        <div
-            class="CartHead text-center w-100 p-5 d-flex align-items-center justify-content-center d-block d-sm-none text-white">
-            <h2>Shopping Cart</h2>
-        </div>
-        <div id="emptyCart"
-            class="container d-flex align-items-center justify-content-center flex-column py-4 text-center d-none">
-            <img src="./asset/img/empty-cart.png" style="width: 200px;">
-            <h1>Your Cart is currently empty.</h1>
-            <p>Before proceed to checkout you must add some products to your shopping cart.<br /> You will find a lot of
-                interesting products on our "Shop" page.
-            </p>
-            <a href="./index.html"><button id="RETURN">RETURN TO SHOP</button></a>
-        </div>
-        <div class="container py-5">
+        <div class="text-white container-fluid px-5">
+            <div id="notLogin" class="mt-4 d-none">
+                <div><p>Returning customer?</p>
+                    <a href="#logForm" onclick="loginForm()">Click here to login</a> | <a href="#">Register</a></div>
+                        <form class="border col-4 container my-3 p-3 ms-0" >
+                            <p>If you have shopped with us before, please enter your details below.</p>
+                            <p>If you are a new customer, please proceed to the Billing section.</p>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username or Email Address <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control bg-transparent" id="username" placeholder="Enter your username or email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control bg-transparent" id="password" placeholder="Enter your password">
+                                    <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Log In</button>
+                            <div class="text-center mt-3">
+                                <a href="#" class="text-decoration-none text-light">Lost your password?</a>
+                            </div>
+                        </form>
+                   <p>You must be logged in to checkout.</p>
+            </div>
+            <div class="d-flex mt-3"><p>Have a coupon?</p> <a href="#">Click here to enter your code</a></div>
             <div class="row">
-                <div class="col-lg-8 d-none d-sm-block">
-                    <table class="table table-dark table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="cart-item">
-                                <td class="d-flex align-items-center">
-                                    <button class="btn btn-outline-light">x</button>
-                                    <img src="./asset/img/game.png">
-                                    <span class="ms-3">PlayStation Store KSA $70 Code (KSA)</span>
-                                </td>
-                                <td>EGP 3,759.50</td>
-                                <td class="text-center">
-                                    <div class="input-group" style="width: 120px;">
-                                        <button class="btn btn-outline-light">-</button>
-                                        <input type="text" class="form-control bg-dark text-light text-center" value="1">
-                                        <button class="btn btn-outline-light">+</button>
-                                    </div>
-                                </td>
-                                <td>EGP 3,759.50</td>
-                            </tr>
-                            <tr class="cart-item">
-                                <td class="d-flex align-items-center">
-                                    <button class="btn btn-outline-light">x</button>
-                                    <img src="./asset/img/game.png">
-                                    <span class="ms-3">PlayStation Store KSA $70 Code (KSA)</span>
-                                </td>
-                                <td>EGP 3,759.50</td>
-                                <td class="text-center">
-                                    <div class="input-group" style="width: 120px;">
-                                        <button class="btn btn-outline-light">-</button>
-                                        <input type="text" class="form-control bg-dark text-light text-center" value="1">
-                                        <button class="btn btn-outline-light">+</button>
-                                    </div>
-                                </td>
-                                <td>EGP 3,759.50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn btn-update my-2">Update Cart</button>
-                </div>
-                <div class="col-lg-8 d-sm-none d-flex mb-3">
-                    <div class="card bg-dark border-0">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center flex-column">
-                                <div class="d-flex align-items-center my-2">
-                                    <button class="btn btn-outline-light">x</button>
-                                    <img src="./asset/img/game.png" style="max-width: 80px;" alt="Product Image"
-                                        class="me-3">
-                                    <div>
-                                        <h6 class="card-title text-white">PlayStation Store KSA $70 Code (KSA)</h6>
-                                        <p class="text-secondary mb-0">Price: <span class="text-light">EGP
-                                                3,759.50</span></p>
-                                    </div>
-                                    <div class="input-group d-flex">
-                                        <button class="btn btn-outline-light" type="button">-</button>
-                                        <input type="number"
-                                            class="form-control text-center bg-dark text-light border-light" value="1">
-                                        <button class="btn btn-outline-light" type="button">+</button>
-                                    </div>
+                    <div class="container col-md-6 bg-dark">
+                        <h2 class="mb-4">Billing Details</h2>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-transparent" id="firstName" placeholder="Mohamed" required>
                                 </div>
-                                <div class="d-flex align-items-center my-2">
-                                    <button class="btn btn-outline-light">x</button>
-                                    <img src="./asset/img/game.png" style="max-width: 80px;" alt="Product Image"
-                                        class="me-3">
-                                    <div>
-                                        <h6 class="card-title text-white">PlayStation Store KSA $70 Code (KSA)</h6>
-                                        <p class="text-secondary mb-0">Price: <span class="text-light">EGP
-                                                3,759.50</span></p>
-                                    </div>
-                                    <div class="input-group d-flex">
-                                        <button class="btn btn-outline-light" type="button">-</button>
-                                        <input type="number"
-                                            class="form-control text-center bg-dark text-light border-light" value="1">
-                                        <button class="btn btn-outline-light" type="button">+</button>
-                                    </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control bg-transparent" id="lastName" placeholder="Talaat" required>
                                 </div>
                             </div>
-                            <hr class="text-secondary">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <p class="text-light mb-0">Subtotal: <span>EGP 3,759.50</span></p>
-                                <button class="btn btn-update px-4">Update Cart</button>
+                            
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country / Region <span class="text-danger">*</span></label>
+                                <select class="form-select form-control bg-transparent " id="country" required>
+                                    <option selected>Egypt</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                    <option>Canada</option>
+                                    <option>Australia</option>
+                                </select>
                             </div>
-                        </div>
-                    </div>
+                
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control bg-transparent" id="phone" placeholder="201234567" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control bg-transparent" id="email" placeholder="test@gmail.com" required>
+                            </div>
+                        </form>
                 </div>
-
-
-                <div class="col-lg-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Cart Totals</h5>
-                            <div class="d-flex justify-content-between">
-                                <span>Subtotal</span>
-                                <span>EGP 3,759.50</span>
-                            </div>
-                            <hr>
-                            <div class="d-flex justify-content-between">
-                                <span>Total</span>
-                                <span>EGP 3,759.50</span>
-                            </div>
-                            <button class="btn btn-checkout w-100 mt-3">Proceed to Checkout</button>
-                        </div>
-                    </div>
+                <div class="col-md-6 text-center">
+                    <h2>Your order</h2>
                 </div>
+    
             </div>
         </div>
-
     </section>
     <div id="footer" style="background-color: #082327;height: auto;">
         <div class="container pt-3">
@@ -319,6 +270,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </body>
 
 </html>
