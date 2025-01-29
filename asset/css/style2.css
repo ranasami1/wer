@@ -1,14 +1,11 @@
 .btn-update, .btn-checkout {
     background-color: #65BA8E;
-    color: white;
+    color: white !important;
     font-weight: bold;
 }
-.btn-update:hover, .btn-checkout:hover {
+.btn-update:hover, .btn-checkout:hover{
     background-color: #65BA8E;
 }
 .cart-item img {
     max-width: 80px;
-}
-.btn-success{
-    background-color: #65BA8E !important;
 }
