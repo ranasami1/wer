@@ -26,6 +26,12 @@ form input::placeholder{
 .text-success{
     color: #65BA8E !important;
 }
+/*.bill{
+    background-image: url(../img/—Pngtree—torn\ notebook\ paper\ coiled\ paper_8243306.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}*/
 .dropdownDiv{
     display: none;
 }
