@@ -12,16 +12,10 @@
 #notLogin {
     font-size: 14px;
 }
-a{
+#notLogin div a{
     display: inline;
     text-decoration: underline;
 }
-input{
-    color: #65BA8E !important;
-}
-input::placeholder{
-    color: #65BA8E !important;
-}
-.display{
-    display: none;
+form input::placeholder{
+    color: #ffff !important;
 }

@@ -78,7 +78,7 @@
             <a href="./Checkout.html" class="active">CHECKOUT</a> →
             <a href="#">ORDER COMPLETE</a>
         </div>
-        <div class="text-white container-fluid px-5">
+        <div class="text-white container">
             <div id="notLogin" class="mt-4 d-none">
                 <div><p>Returning customer?</p>
                     <a href="#logForm" onclick="loginForm()">Click here to login</a> | <a href="#">Register</a></div>
@@ -116,23 +116,23 @@
             </div>
             <div class="d-flex mt-3"><p>Have a coupon?</p> <a href="#">Click here to enter your code</a></div>
             <div class="row">
-                    <div class="container col-md-6 bg-dark">
-                        <h2 class="mb-4">Billing Details</h2>
+                    <div class="container col-md-6 bg-dark p-4">
+                        <h3 class="mb-4">Billing Details</h3>
                         <form>
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-transparent" id="firstName" placeholder="Mohamed" required>
+                                    <input type="text" class="form-control bg-transparent text-light" id="firstName" placeholder="Mohamed" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-transparent" id="lastName" placeholder="Talaat" required>
+                                    <input type="text" class="form-control bg-transparent text-light" id="lastName" placeholder="Talaat" required>
                                 </div>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="country" class="form-label">Country / Region <span class="text-danger">*</span></label>
-                                <select class="form-select form-control bg-transparent " id="country" required>
+                                <select class="form-select bg-dark text-light" id="country" required>
                                     <option selected>Egypt</option>
                                     <option>United States</option>
                                     <option>United Kingdom</option>
@@ -143,17 +143,17 @@
                 
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control bg-transparent" id="phone" placeholder="201234567" required>
+                                <input type="tel" class="form-control bg-transparent text-light" id="phone" placeholder="201234567" required>
                             </div>
                             
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control bg-transparent" id="email" placeholder="test@gmail.com" required>
+                                <input type="email" class="form-control bg-transparent text-light" id="email" placeholder="test@gmail.com" required>
                             </div>
                         </form>
                 </div>
                 <div class="col-md-6 text-center">
-                    <h2>Your order</h2>
+                    <h3>Your order</h3>
                 </div>
     
             </div>
