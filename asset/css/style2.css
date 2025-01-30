@@ -10,7 +10,7 @@
 .cart-item img {
     max-width: 80px;
 }
-.checkout p{
+.bill p{
     font-size: 12px;
 }
 #notLogin {
@@ -20,6 +20,25 @@
     display: inline;
     text-decoration: underline;
 }
+.promoCode {
+    display: none;
+}
+.promoCode .btn-success{
+    background-color: #65BA8E;
+    font-size: 10px;
+    width: 200px;
+    padding: 12px 0;
+}
+
+.coupon .showCoupon {
+    text-decoration: underline;
+    color: #65BA8E;
+}
+
+.coupon input[type="checkbox"]:checked ~ .promoCode {
+    display: block;
+}
+
 form input::placeholder{
     color: #ffff !important;
 }
@@ -35,7 +54,7 @@ form input::placeholder{
 .dropdownDiv{
     display: none;
 }
-.payment-option input:checked ~ .container{
+.payment-option input:checked ~ .dropdownDiv{
     display: block;
     margin: 3px 0;
     transition: 0.8s ease;

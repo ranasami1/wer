@@ -124,11 +124,19 @@
                 </form>
                 <p>You must be logged in to checkout.</p>
             </div>
-            <div class="d-flex mt-3">
-                <p>Have a coupon?</p> <a href="#">Click here to enter your code</a>
+            <div class="coupon">
+                <p>Have a coupon? <label for="showCoupon" class="showCoupon d-inline">Click here to enter your code</label></p>
+                <input type="checkbox" id="showCoupon" style="display:none;">
+                <div class="promoCode border rounded p-4 bg-dark col-4">
+                    <p>If you have a coupon code, please apply it below.</p>
+                    <div class="d-flex align-items-center justify-content-between gap-3">
+                        <input type="text" class="form-control bg-transparent text-light" id="firstName" placeholder="Coupon code">
+                        <button type="submit" class="btn btn-success">APPLY COUPON</button>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="container col-md-6 p-4">
+                <div class="container col-md-6 py-4">
                     <h3 class="mb-4">Billing Details</h3>
                     <form>
                         <div class="row mb-3">
@@ -172,7 +180,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="bill col-md-6 mb-4 p-4 bg-dark">
+                <div class="bill col-md-6 mb-4 py-4 bg-dark">
                     <div class="order-card">
                         <h3 class="text-center">YOUR ORDER</h3>
                         <table class="table table-dark mt-4 text-start">
