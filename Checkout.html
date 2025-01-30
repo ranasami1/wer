@@ -72,92 +72,206 @@
             </div>
         </div>
     </div>
-    <section class="d-flex flex-column">
-        <div class="CartHead text-center w-100 p-5 d-flex align-items-center justify-content-center gap-1 d-sm-flex d-none">
+    <section class="checkout d-flex flex-column">
+        <div
+            class="CartHead text-center w-100 p-5 d-flex align-items-center justify-content-center gap-1 d-sm-flex d-none">
             <a href="shoppingCart.html">SHOPPING CART</a> →
             <a href="./Checkout.html" class="active">CHECKOUT</a> →
             <a href="#">ORDER COMPLETE</a>
         </div>
         <div class="text-white container">
             <div id="notLogin" class="mt-4 d-none">
-                <div><p>Returning customer?</p>
-                    <a href="#logForm" onclick="loginForm()">Click here to login</a> | <a href="#">Register</a></div>
-                        <form class="border col-4 container my-3 p-3 ms-0" >
-                            <p>If you have shopped with us before, please enter your details below.</p>
-                            <p>If you are a new customer, please proceed to the Billing section.</p>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Username or Email Address <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control bg-transparent" id="username" placeholder="Enter your username or email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                                <div class="input-group">
-                                    <input type="password" class="form-control bg-transparent" id="password" placeholder="Enter your password">
-                                    <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
-                                        <i class="bi bi-eye"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rememberMe">
-                                    <label class="form-check-label" for="rememberMe">Remember me</label>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="g-recaptcha" data-sitekey="your-site-key"></div>
-                            </div>
-                            <button type="submit" class="btn btn-success w-100">Log In</button>
-                            <div class="text-center mt-3">
-                                <a href="#" class="text-decoration-none text-light">Lost your password?</a>
-                            </div>
-                        </form>
-                   <p>You must be logged in to checkout.</p>
+                <div>
+                    <p>Returning customer?</p>
+                    <a href="#logForm" onclick="loginForm()">Click here to login</a> | <a href="#">Register</a>
+                </div>
+                <form class="border col-4 container my-3 p-3 ms-0">
+                    <p>If you have shopped with us before, please enter your details below.</p>
+                    <p>If you are a new customer, please proceed to the Billing section.</p>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username or Email Address <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control bg-transparent" id="username"
+                            placeholder="Enter your username or email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <input type="password" class="form-control bg-transparent" id="password"
+                                placeholder="Enter your password">
+                            <button class="btn btn-outline-secondary" type="button" onclick="togglePassword()">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Log In</button>
+                    <div class="text-center mt-3">
+                        <a href="#" class="text-decoration-none text-light">Lost your password?</a>
+                    </div>
+                </form>
+                <p>You must be logged in to checkout.</p>
             </div>
-            <div class="d-flex mt-3"><p>Have a coupon?</p> <a href="#">Click here to enter your code</a></div>
+            <div class="d-flex mt-3">
+                <p>Have a coupon?</p> <a href="#">Click here to enter your code</a>
+            </div>
             <div class="row">
-                    <div class="container col-md-6 bg-dark p-4">
-                        <h3 class="mb-4">Billing Details</h3>
-                        <form>
-                            <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="firstName" class="form-label">First name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-transparent text-light" id="firstName" placeholder="Mohamed" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="lastName" class="form-label">Last name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control bg-transparent text-light" id="lastName" placeholder="Talaat" required>
-                                </div>
+                <div class="container col-md-6 p-4">
+                    <h3 class="mb-4">Billing Details</h3>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control bg-transparent text-light" id="firstName"
+                                    placeholder="Mohamed" required>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label for="country" class="form-label">Country / Region <span class="text-danger">*</span></label>
-                                <select class="form-select bg-dark text-light" id="country" required>
-                                    <option selected>Egypt</option>
-                                    <option>United States</option>
-                                    <option>United Kingdom</option>
-                                    <option>Canada</option>
-                                    <option>Australia</option>
-                                </select>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control bg-transparent text-light" id="lastName"
+                                    placeholder="Talaat" required>
                             </div>
-                
-                            <div class="mb-3">
-                                <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
-                                <input type="tel" class="form-control bg-transparent text-light" id="phone" placeholder="201234567" required>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control bg-transparent text-light" id="email" placeholder="test@gmail.com" required>
-                            </div>
-                        </form>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Country / Region <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select bg-transparent text-light" id="country" required>
+                                <option class="bg-dark" selected>Egypt</option>
+                                <option class="bg-dark">United States</option>
+                                <option class="bg-dark">United Kingdom</option>
+                                <option class="bg-dark">Canada</option>
+                                <option class="bg-dark">Australia</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control bg-transparent text-light" id="phone"
+                                placeholder="201234567" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address <span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control bg-transparent text-light" id="email"
+                                placeholder="test@gmail.com" required>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-6 text-center">
-                    <h3>Your order</h3>
+                <div class="bill col-md-6 bg-dark mb-4 p-4">
+                    <div class="order-card">
+                        <h3 class="text-center">YOUR ORDER</h3>
+                        <table class="table table-dark mt-4 text-start">
+                            <thead>
+                                <tr>
+                                    <th>PRODUCT</th>
+                                    <th class="text-end">SUBTOTAL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PlayStation Store KSA $70 Code (KSA) × 1</td>
+                                    <td class="text-end">EGP 3,759.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Steam Wallet Code 10 USD × 2</td>
+                                    <td class="text-end">EGP 1,030.00</td>
+                                </tr>
+                                <tr class="fw-bold">
+                                    <td>Subtotal</td>
+                                    <td class="text-end text-success">EGP 4,789.50</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment & Service Fees</td>
+                                    <td class="text-end text-success">EGP 301.74</td>
+                                </tr>
+                                <tr class="fw-bold total">
+                                    <td>Total</td>
+                                    <td class="text-end text-success">EGP 5,091.24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="payment-option">
+                            <input type="radio" name="payment" checked>
+                            <span>Pay with Paymob</span>
+                            <img src="./asset/img/Visa.png" alt="Visa" width="40">
+                            <img src="./asset/img/Group 70.png" alt="Mastercard" width="40">
+                            <img src="./asset/img/ميزه.png" alt="meeza" width="40">
+                            <img src="./asset/img/امان.png" alt="aman" width="40">
+                            <img src="./asset/img/Vodafone.png" alt="vodafone" width="40">
+                            <img src="./asset/img/orangeMoney.png" alt="orange" width="40">
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">Pay with (Visa - Mastercard - Meeza - Mobile Wallets - Aman)</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-option">
+                            <input type="radio" name="payment">
+                            <span>FawryPay (Pay by Reference Number)</span>
+                            <img src="./asset/img/fawry.png" alt="Fawry" width="40">
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">FawryPay (Pay by Reference Number)</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-option">
+                            <input type="radio" name="payment">
+                            <span>ValU - Souhoola - Aman</span>
+                            <img src="valu.png" alt="ValU" width="40">
+                            <img src="valu.png" alt="ValU" width="40">
+                            <img src="valu.png" alt="ValU" width="40">
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">Buy Now Pay Later!</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-option">
+                            <input type="radio" name="payment">
+                            <span>Pay with Cryptomus</span>
+                            <div class="bg-black rounded d-inline p-2">Pay with Crypto</div>
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">Crypto payment system</p>
+                            </div>
+                        </div>
+
+                        <div class="payment-option">
+                            <input type="radio" name="payment">
+                            <span>InstaPay</span>
+                            <img src="instapay.png" alt="InstaPay" width="40">
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">• Send Your Payment to mohamed9420@instapay • Send your Order Number & Transaction Receipt (Screenshot) to: Messenger: https://m.me/iamalivestore OR What's APP:<br/> https://wa.me/201203226676
+                                   <br/> Instructions</p>
+                                   <div class="bg-warning">
+                                    <p class="text-black p-3">Send Your Payment to mohamed9420@instapay</p>
+                                   </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-option">
+                            <input type="radio" name="payment">
+                            <span>Cryptocurrency</span>
+                            <i class="fab fa-bitcoin"></i>
+                            <i class="fab fa-ethereum"></i>
+                            <div class="dropdownDiv bg-black container py-2">
+                                <p class="m-0">Buy Now Pay Later!</p>
+                            </div>
+                        </div>
+                    </div>
+                       
                 </div>
-    
             </div>
-        </div>
     </section>
     <div id="footer" style="background-color: #082327;height: auto;">
         <div class="container pt-3">

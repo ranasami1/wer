@@ -1,3 +1,4 @@
+
 .btn-update, .btn-checkout {
     background-color: #65BA8E;
     color: white !important;
@@ -9,6 +10,9 @@
 .cart-item img {
     max-width: 80px;
 }
+.checkout p{
+    font-size: 12px;
+}
 #notLogin {
     font-size: 14px;
 }
@@ -18,4 +22,14 @@
 }
 form input::placeholder{
     color: #ffff !important;
+}
+.text-success{
+    color: #65BA8E !important;
+}
+.dropdownDiv{
+    display: none;
+}
+.payment-option input:checked ~ .container{
+    display: block;
+    transition: .9s ease;
 }
