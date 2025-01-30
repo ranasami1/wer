@@ -84,16 +84,7 @@ function toggleGameList(event) {
         toggleButton.innerHTML = "▼";
     }
 }
-            
-document.addEventListener('DOMContentLoaded', function() {
-    const showCoupon = document.getElementById('showCoupon');
-    const promoCode = document.getElementById('promoCode');
 
-    showCoupon.addEventListener('click', function(e) {
-        e.preventDefault();
-        promoCode.style.display = promoCode.style.display === 'none' ? 'block' : 'none';
-    });
-});
 
   
 
