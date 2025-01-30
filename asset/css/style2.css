@@ -12,8 +12,7 @@
 }
 .deleteBtn{
     font-size: 10px;
-    padding: 5px !important;
-    color: red !important;
+    border-radius: 100%;
 }
 .bill p{
     font-size: 12px;
