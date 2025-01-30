@@ -37,5 +37,6 @@ form input::placeholder{
 }
 .payment-option input:checked ~ .container{
     display: block;
-    transition: .9s ease;
+    margin: 3px 0;
+    transition: 0.8s ease;
 }
