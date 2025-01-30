@@ -445,7 +445,6 @@ form .form-group .form-control:focus{
 #alert{
     background: red;
     color: #ffff;
-    width: 50%;
     border-radius: 35px;
     text-align: center;
     margin: auto;
