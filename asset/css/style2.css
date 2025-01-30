@@ -29,7 +29,9 @@
     width: 200px;
     padding: 12px 0;
 }
-
+input[type="text"].form-control::placeholder {
+    color: white !important;
+  }
 .coupon .showCoupon {
     text-decoration: underline;
     color: #65BA8E;
