@@ -4,546 +4,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="./asset/css/style.css">
-    <title>Privacy Policy</title>
+    <link href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="//cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./asset/css/style.css?v=1.1">
+    <title>single game</title>
 </head>
 
 <body>
-    <div id="header" class="container d-none d-md-none d-lg-block">
-        <div class="container top-header d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <div class="dropdown">
-                    <img id="country-flag" src="./asset/img/egy.png" alt="Egypt Flag" style="border-radius: 50%;">
-                    <select id="country-select">
-                        <option value="EGP" selected>EGP</option>
-                        <option value="US">US</option>
-                    </select>
-                </div>
-                <span class="support">| SUPPORT</span>
+<div id="top-header" class="container d-none d-md-none d-lg-block">
+    <div class="container top-header d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="dropdown">
+                <img class="country-flag rounded-5" src="./asset/img/egy.png" alt="Egypt Flag">
+                <select id="country-select">
+                    <option value="EGP" selected>EGP</option>
+                    <option value="US">US</option>
+                </select>
             </div>
-            <div class="social-icons d-flex gap-2">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <span>|</span>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"> <span class="support text-white">SUPPORT</span></a>
+        </div>
+        <div class="social-icons d-flex gap-2">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <span>|</span>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+<div id="main-header">
+    <div class="header-wrap container d-flex flex-lg-row align-items-center flex-column justify-content-lg-between flex-wrap border-bottom border-4 py-4">
+        <a href="index.html"><img class="websiteLogo" src="./asset/img/logo.png" alt="iam live store logo"></a>
+        <nav class="navbar navbar-expand-sm">
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TOURNAMENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="login-register" class="d-none d-md-none d-lg-block">
+            <a href="register.html">Login/Register <img src="asset/img/profile.png" alt="profile" class="ms-2"> </a>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-sm-center justify-content-lg-between py-4">
+        <div id="headerMenu">
+            <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
+        </div>
+        <div class="custom-search-bar d-flex align-items-center m-auto">
+            <img style="width: 35px; margin: 0 5px;" src="./asset/img/search.png">
+            <input type="text" placeholder="What are you looking for?">
+        </div>
+        <div id="wallet-cart" class="d-flex gap-1">
+            <a class="d-inline cart" href="./shoppingCart.html">
+                <svg width="20" height="20" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.34027 3.57171C2.37295 2.47418 2.7963 1.55471 3.65031 0.843449C4.2934 0.296935 5.11633 -0.00264476 5.96702 8.16578e-05C6.97857 -0.00614069 7.85159 0.343267 8.57002 1.04065C9.28844 1.73803 9.63571 2.58906 9.65912 3.58463C9.8108 3.58463 9.95419 3.58463 10.0981 3.58463C10.5267 3.58406 10.9429 3.72556 11.2793 3.98619C11.6157 4.24682 11.8525 4.6113 11.9514 5.02056C12.0392 5.36374 11.9939 5.70119 11.9266 6.0415C11.69 7.23811 11.4598 8.43902 11.2267 9.63802C11.1052 10.2603 10.9945 10.8868 10.8575 11.5047C10.656 12.4141 9.90445 12.999 8.95533 13C6.99499 13 5.03464 13 3.0743 13C2.05593 13 1.30142 12.3687 1.11852 11.386C0.930747 10.3761 0.72834 9.36902 0.533249 8.36052C0.363032 7.48078 0.184517 6.60199 0.0260051 5.71985C-0.15104 4.73385 0.597622 3.74211 1.61112 3.61383C1.84572 3.58032 2.08665 3.58511 2.34027 3.57171ZM3.26695 3.5741H8.73341C8.75633 2.20375 7.58969 0.873124 5.9636 0.893705C4.33752 0.914287 3.23428 2.27076 3.26793 3.57554L3.26695 3.5741ZM3.71421 7.16775C3.71228 6.93001 3.61454 6.70268 3.44237 6.53542C3.2702 6.36816 3.03758 6.27457 2.79533 6.27508C2.55299 6.27735 2.32143 6.37369 2.15125 6.54302C1.98108 6.71236 1.88613 6.94092 1.88717 7.17875C1.89048 7.41455 1.98784 7.63969 2.15835 7.80585C2.32886 7.97202 2.55894 8.06599 2.79923 8.06759C3.04187 8.06696 3.2744 7.97212 3.44602 7.80379C3.61764 7.63545 3.71441 7.40731 3.71518 7.16918L3.71421 7.16775ZM9.1948 6.27364C8.95242 6.27529 8.72055 6.371 8.54985 6.53987C8.37914 6.70874 8.28346 6.93705 8.28373 7.17493C8.28652 7.41077 8.38336 7.63616 8.55349 7.80276C8.72362 7.96936 8.95349 8.06392 9.19382 8.06616C9.43609 8.06604 9.66848 7.97193 9.84034 7.80435C10.0122 7.63678 10.1096 7.40932 10.1112 7.17157C10.1103 6.93375 10.0135 6.70595 9.84199 6.53796C9.67045 6.36997 9.43812 6.27546 9.19578 6.27508L9.1948 6.27364Z"
+                          fill="white"/>
+                </svg>
+
+            </a>
+        </div>
+    </div>
+</div>
+<section class="container p-4">
+    <div class="row">
+        <div id="left-side" class="col-md-4">
+            <div class="image-container w-100">
+                <img src="./asset/img/gameImg.png" class="img-fluid rounded main-image">
+                <img src="./asset/img//heart.png" class="heart-icon">
+            </div>
+            <h4 class="mt-3">PUBG Mobile UC Redeem Code</h4>
+            <div id="banner" class="d-flex align-items-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="./asset/img/logoicon.png">
+                    <p class="m-0">I’M ALIVE</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="./asset/img/instock.png">
+                    <p class="m-0">In stock</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-2">
+                    <img src="./asset/img/download.png">
+                    <p class="m-0">Digital download</p>
+                </div>
+            </div>
+            <ul id="game-list" class="p-0 mt-3">
+                <li>Codashop offers easy, safe and convenient PUBGM UC Top ups.</li>
+                <li>Pay conveniently with Paypal, and VISA.</li>
+                <li>Simply select your preferred PUBG Mobile voucher option, complete the payment, and you will
+                    receive your voucher code on the payment confirmation page and via email or SMS.
+                </li>
+                <li>PUBG UC voucher codes sold have at least 7 days of validity from the date of purchase. Learn
+                    how to redeem PUBGM UC voucher codes <a href="#">here.</a></li>
+                <li>Learn how to buy PUBGM Royale Pass here.</li>
+                <li><a href="./register.html">Sign in to your Codashop account</a> and get access to PUBG Mobile
+                    events & exclusive offers. Don’t have a Codashop account yet?
+                    <a href="./register.html"> Sign up today!</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-8 d-flex flex-column gap-5">
+            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
+                <div id="Hline"></div>
+                <div id="secHeader">
+                    <h6>Select voucher</h6>
+                </div>
+                <div class="d-flex align-items-center justify-content-start gap-3 flex-column my-3">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 90%;">
+                        <input id="riotId" type="text" placeholder="Enter your Riot ID">
+                        <img style="width: 30px;" src="./asset/img/question.png">
+                    </div>
+                    <p style="font-size: 8px; width: 90%;color: #65ba8e69;">To find your Riot ID, please select
+                        your profile page
+                        and copy your Riot ID + tag using the button next to your Riot ID. Please remove spaces
+                        between letters if applicable (example: Westbourne#SEA).</p>
+                </div>
+                <div id="signN">
+                    <p>1</p>
+                </div>
+            </div>
+            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
+                <div id="Hline"></div>
+                <div id="secHeader">
+                    <h6>Select voucher</h6>
+                </div>
+                <div class="live-badge my-4">
+                    <div class="count">27</div>
+                    People are viewing this right now
+                </div>
+                <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
+                    <div id="voucherCard" class="Popular d-flex flex-column justify-content-end">
+                        <div id="badge">
+                            <p>Popular</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">60 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
+                            <p id="oldPrice">00.00 EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="voucherCard" class="Starred d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">325 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                            <i class="fa-solid fa-star m-0"></i>
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">325 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">325 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">325 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
+                        <div class="d-flex flex-column align-items-center">
+                            <h6 style="margin: 0 !important;">325 UC</h6>
+                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+
+                </div>
+                <div id="signN">
+                    <p>2</p>
+                </div>
+            </div>
+            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
+                <div id="Hline"></div>
+                <div id="secHeader">
+                    <h6>Select payment</h6>
+                </div>
+                <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/Visa.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
+                            <p id="oldPrice">00.00 EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/paypal.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/Group 70.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/Group 70.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/fawry.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/orangeMoney.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
+                        <div class="d-flex flex-column align-items-center">
+
+                            <img src="./asset/img/Vodafone.png" style="width: 40px;">
+                        </div>
+                        <div class="d-flex align-items-start justify-content-start flex-column">
+                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                            <p id="oldPrice">00.00EGP</p>
+                        </div>
+                        <div id="discount">
+                            -10%
+                        </div>
+                    </div>
+                </div>
+                <div id="signN">
+                    <p>3</p>
+                </div>
+                <div id="diffPayment"><a href="#">I want to use a different payment method</a></div>
+            </div>
+            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
+                <div id="Hline"></div>
+                <div id="secHeader">
+                    <h6>BUY!</h6>
+                </div>
+                <div class="container d-flex align-items-center justify-content-center flex-column last-sec">
+                    <p>Please Double-check your email; we'll send your voucher code there.</p>
+                    <input id="Email" type="text" placeholder="Email address">
+                    <div class="d-flex flex-column p-4 gap-2 w-100">
+                        <div class="form-check d-flex p-0">
+                            <input type="checkbox" class="checkbox" id="codashopNews" checked>
+                            <label for="codashopNews">
+                                Yes, send me messages with exclusive Codashop news and promotions.
+                            </label>
+                        </div>
+                        <div class="form-check d-flex p-0">
+                            <input type="checkbox" class="checkbox" id="smsNews">
+                            <label for="smsNews">
+                                Yes, I would like to receive news and promotions via SMS.
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="d-flex align-items-start justify-content-start flex-column">
+                                <p>000 UC <input type="radio">Card Payment</p>
+                                <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
+                                <p id="oldPrice">00.00EGP</p>
+                            </div>
+                            <button id="buyNow">BUY NOW</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="signN">
+                    <p>4</p>
+                </div>
             </div>
         </div>
     </div>
-    <div id="headerSec2">
-        <div class="container d-flex flex-lg-row align-items-center flex-column justify-content-lg-between flex-wrap border-bottom pt-1"
-            style="border-color:#65BA8E !important;border-width:4px !important;">
-            <a href="index.html"><img id="websiteLogo" src="./asset/img/LOGOI-05 1.png"></a>
-            <nav class="navbar navbar-expand-sm">
-                        <ul class="navbar-nav flex-row gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TOURNAMENT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                        </ul>
-            </nav>
-            <div id="login-register" class="d-none d-md-none d-lg-block">
-                <a href="register.html"><i class="fa-regular fa-user" style="font-size:25px ;"></i> Login/Register</a>
-            </div>
-        </div>
-        <div class="container d-flex justify-content-sm-center justify-content-lg-between  py-4">
-            <div class="headerMenu">
-                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
-                    <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
-                </a>
-                <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown">
-                                PC
-                            </a>
-                            <ul class="PC dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown">
-                                PNS
-                            </a>
-                            <ul class="PNS dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown">
-                                XBOX
-                            </a>
-                            <ul class="XBOX dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown">
-                                MOBILE
-                            </a>
-                            <ul class="MOBILE dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown">
-                                Entertainment
-                            </a>
-                            <ul class="Entertainment dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </ul>
+
+</section>
+<div id="footer">
+    <div class="container pt-4">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex justify-content-start gap-2">
+                    <img style="height: 50px;" src="./asset/img/Email Delivery.png">
+                    <div>
+                        <h6>Email Delivery</h6>
+                        <p id="textsec">Orders Delivered by Email.</p>
                     </div>
                 </div>
             </div>
-            <div class="custom-search-bar d-flex align-items-center m-auto">
-                <img style="width: 35px; margin: 0 5px;" src="./asset/img/search.png">
-                <input type="text" placeholder="What are you looking for?">
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex justify-content-start gap-2">
+                    <img style="height: 50px;" src="./asset/img/Secure Payment.png">
+                    <div>
+                        <h6>Secure Payment</h6>
+                        <p id="textsec">High Secure Payment Gateways.</p>
+                    </div>
+                </div>
             </div>
-            <div id="wallet-cart" class="d-flex gap-1">
-                <a class="d-inline" href="./shoppingCart.html"><img style="width: 30px;" src="./asset/img/cart.png"></a>
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex justify-content-start gap-2">
+                    <img style="height: 50px;" src="./asset/img/Happy Customers.png">
+                    <div>
+                        <h6>Happy Customers</h6>
+                        <p id="textsec">Thousands of Satisfied Customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex justify-content-start gap-2">
+                    <img style="height: 50px;" src="./asset/img/Best Prices.png">
+                    <div>
+                        <h6>Best Prices</h6>
+                        <p id="textsec">Best Deals for You.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <section class="container p-4">
-            <div class="row">
-                <div id="left-side" class="col-md-4">
-                    <div class="image-container w-100">
-                        <img src="./asset/img/gameImg.png" class="img-fluid rounded main-image">
-                        <img src="./asset/img//heart.png" class="heart-icon">
-                    </div>
-                    <h4 class="mt-3">PUBG Mobile UC Redeem Code</h4>
-                    <div id="banner" class="d-flex align-items-center justify-content-between flex-wrap">
-                        <div class="d-flex align-items-center justify-content-center gap-2">
-                            <img src="./asset/img/logoicon.png">
-                            <p class="m-0">I’M ALIVE</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center gap-2">
-                            <img src="./asset/img/instock.png">
-                            <p class="m-0">In stock</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center gap-2">
-                            <img src="./asset/img/download.png">
-                            <p class="m-0">Digital download</p>
-                        </div>
-                    </div>
-                    <ul id="game-list" class="p-0 mt-3">
-                        <li>Codashop offers easy, safe and convenient PUBGM UC Top ups.</li>
-                        <li>Pay conveniently with Paypal, and VISA.</li>
-                        <li>Simply select your preferred PUBG Mobile voucher option, complete the payment, and you will
-                            receive your voucher code on the payment confirmation page and via email or SMS.</li>
-                        <li>PUBG UC voucher codes sold have at least 7 days of validity from the date of purchase. Learn
-                            how to redeem PUBGM UC voucher codes <a href="#">here.</a></li>
-                        <li>Learn how to buy PUBGM Royale Pass here.</li>
-                        <li><a href="./register.html">Sign in to your Codashop account</a> and get access to PUBG Mobile
-                            events & exclusive offers. Don’t have a Codashop account yet?
-                            <a href="./register.html"> Sign up today!</a>
-                        </li>
+    <div class="container mt-3" style="border-bottom: 4px solid #0c343a;border-top: 4px solid #0c343a;">
+        <div class="row mt-4">
+            <div class="col-sm-6 col-md-3">
+                <div id="textsec" style="font-size: 12px;">
+                    <img style="height:55px;" class="pb-2" src="./asset/img/footer logo.png">
+                    <p>I'm Alive is one of the first online Stores that sell digital codes & gift cards for gamers.
+                    </p>
+                    <p>Reg. No.: 1341600
+                        128 City Road, London, United Kingdom, EC1V 2NX </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex flex-column align-items-start">
+                    <h6>I’m Alive</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="./Privacy Policy.html">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">My Account</a></li>
                     </ul>
                 </div>
-                <div class="col-md-8 d-flex flex-column gap-5">
-                    <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                        <div id="Hline"></div>
-                        <div id="secHeader">
-                            <h6>Select voucher</h6>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-start gap-3 flex-column my-3">
-                            <div class="d-flex align-items-center justify-content-between" style="width: 90%;">
-                                <input id="riotId" type="text" placeholder="Enter your Riot ID">
-                                <img style="width: 30px;" src="./asset/img/question.png">
-                            </div>
-                            <p style="font-size: 8px; width: 90%;color: #65ba8e69;">To find your Riot ID, please select
-                                your profile page
-                                and copy your Riot ID + tag using the button next to your Riot ID. Please remove spaces
-                                between letters if applicable (example: Westbourne#SEA).</p>
-                        </div>
-                        <div id="signN">
-                            <p>1</p>
-                        </div>
-                    </div>
-                    <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                        <div id="Hline"></div>
-                        <div id="secHeader">
-                            <h6>Select voucher</h6>
-                        </div>
-                        <div class="live-badge my-4">
-                            <div class="count">27</div>
-                            People are viewing this right now
-                        </div>
-                        <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
-                            <div id="voucherCard" class="Popular d-flex flex-column justify-content-end">
-                                <div id="badge">
-                                    <p>Popular</p>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">60 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
-                                    <p id="oldPrice">00.00 EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="voucherCard" class="Starred d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                    <i class="fa-solid fa-star m-0"></i>
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                                <div class="d-flex flex-column align-items-center">
-                                    <h6 style="margin: 0 !important;">325 UC</h6>
-                                    <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="d-flex flex-column align-items-start">
+                    <h6>Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@iamalive.store">support@iamalive.store</a></li>
+                        <li><a href="tell:+201203226676">+201203226676</a></li>
+                        <li><a href="#">Support Ticket</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
 
-                        </div>
-                        <div id="signN">
-                            <p>2</p>
-                        </div>
-                    </div>
-                    <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                        <div id="Hline"></div>
-                        <div id="secHeader">
-                            <h6>Select payment</h6>
-                        </div>
-                        <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/Visa.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
-                                    <p id="oldPrice">00.00 EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/paypal.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/Group 70.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/Group 70.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/fawry.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/orangeMoney.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                            <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                                <div class="d-flex flex-column align-items-center">
-
-                                    <img src="./asset/img/Vodafone.png" style="width: 40px;">
-                                </div>
-                                <div class="d-flex align-items-start justify-content-start flex-column">
-                                    <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                    <p id="oldPrice">00.00EGP</p>
-                                </div>
-                                <div id="discount">
-                                    -10%
-                                </div>
-                            </div>
-                        </div>
-                        <div id="signN">
-                            <p>3</p>
-                        </div>
-                        <div id="diffPayment"><a href="#">I want to use a different payment method</a></div>
-                    </div>
-                    <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                        <div id="Hline"></div>
-                        <div id="secHeader">
-                            <h6>BUY!</h6>
-                        </div>
-                        <div class="container d-flex align-items-center justify-content-center flex-column last-sec">
-                            <p>Please Double-check your email; we'll send your voucher code there.</p>
-                            <input id="Email" type="text" placeholder="Email address">
-                            <div class="d-flex flex-column p-4 gap-2 w-100">
-                                <div class="form-check d-flex p-0">
-                                    <input type="checkbox" class="checkbox" id="codashopNews" checked>
-                                    <label for="codashopNews">
-                                        Yes, send me messages with exclusive Codashop news and promotions.
-                                    </label>
-                                </div>
-                                <div class="form-check d-flex p-0">
-                                    <input type="checkbox" class="checkbox" id="smsNews">
-                                    <label for="smsNews">
-                                        Yes, I would like to receive news and promotions via SMS.
-                                    </label>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center flex-wrap">
-                                    <div class="d-flex align-items-start justify-content-start flex-column">
-                                        <p>000 UC <input type="radio">Card Payment</p>
-                                        <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                        <p id="oldPrice">00.00EGP</p>
-                                    </div>
-                                    <button id="buyNow">BUY NOW</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div id="signN">
-                            <p>4</p>
-                        </div>
-                    </div>
                 </div>
             </div>
-
-    </section>
-    <div id="footer" style="background-color: #082327;height: auto;">
-        <div class="container pt-3">
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex justify-content-start gap-2">
-                        <img style="height: 50px;" src="./asset/img/Email Delivery.png">
-                        <div>
-                            <h6>Email Delivery</h6>
-                            <p id="textsec">Orders Delivered by Email.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex justify-content-start gap-2">
-                        <img style="height: 50px;" src="./asset/img/Secure Payment.png">
-                        <div>
-                            <h6>Secure Payment</h6>
-                            <p id="textsec">High Secure Payment Gateways.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex justify-content-start gap-2">
-                        <img style="height: 50px;" src="./asset/img/Happy Customers.png">
-                        <div>
-                            <h6>Happy Customers</h6>
-                            <p id="textsec">Thousands of Satisfied Customers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex justify-content-start gap-2">
-                        <img style="height: 50px;" src="./asset/img/Best Prices.png">
-                        <div>
-                            <h6>Best Prices</h6>
-                            <p id="textsec">Best Deals for You.</p>
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-3">
+                <h6>GET IN THE GAME</h6>
+                <div class="d-flex gap-3">
+                    <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/facebook.png"></a>
+                    <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/whatsup.png"></a>
                 </div>
             </div>
-        </div>
-        <div class="container mt-3" style="border-bottom: 4px solid #0c343a;border-top: 4px solid #0c343a;">
-            <div class="row mt-4">
-                <div class="col-sm-6 col-md-3">
-                    <div id="textsec" style="font-size: 12px;">
-                        <img style="height:55px;" src="./asset/img/footer logo.png">
-                        <p>I'm Alive is one of the first online Stores that sell digital codes & gift cards for gamers.
-                        </p>
-                        <p>Reg. No.: 1341600
-                            128 City Road, London, United Kingdom, EC1V 2NX </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex flex-column align-items-start">
-                        <h6>I’m Alive</h6>
-                        <a href="./Privacy Policy.html">Privacy Policy</a>
-                        <a href="#">Refund Policy</a>
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">My Account</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <div class="d-flex flex-column align-items-start">
-                        <h6>Contact Us</h6>
-                        <a href="mailto:support@iamalive.store">support@iamalive.store</a>
-                        <a href="tell:+201203226676">+201203226676</a>
-                        <a href="#">Support Ticket</a>
-                        <a href="#">FAQ</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                    <h6>GET IN THE GAME</h6>
-                    <div class="d-flex gap-3">
-                        <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/facebook.png"></a>
-                        <a href="#"><img style="margin-top: 5px;height: 45px;" src="./asset/img/whatsup.png"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-4" style="border-bottom: 4px solid #0c343a;">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <h6 class="mb-3">Payment system</h6>
-                    <img class="me-2 payment" src="./asset/img/Visa.png">
-                    <img class="me-2 payment" src="./asset/img/paypal.png">
-                    <img class="me-2 payment" src="./asset//img/امان.png">
-                    <img class="me-2 payment" src="./asset/img/ميزه.png">
-                    <img class="me-2 payment" src="./asset/img/fawry.png">
-                    <img class="me-2 payment" src="./asset/img/Group 70.png">
-                    <img class="me-2 payment" src="./asset/img/Group 70.png">
-                    <img class="me-2 payment" src="./asset/img/orangeMoney.png">
-                    <img class="me-2 payment" src="./asset/img/Vodafone.png">
-                </div>
-                <div class="ms-auto">
-                    <h6 class="mb-3">Join our newsletter!</h6>
-                    <form action="./register.html">
-                        <input type="email" class="input-box" placeholder="Your email address" required>
-                        <input type="submit"  class="signup-btn" value="SIGN UP"></input>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container d-flex">
-            <p class="m-auto p-3" id="textsec"><span>I'm Alive</span> 2022 CREATED BY INNOVALZ.</p>
         </div>
     </div>
-
-    <script src="./asset/js/style.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <div class="container py-4" style="border-bottom: 4px solid #0c343a;">
+        <div class="d-flex align-items-center justify-content-between">
+            <div>
+                <h6 class="mb-3">Payment system</h6>
+                <img class="me-2 payment" src="./asset/img/Visa.png">
+                <img class="me-2 payment" src="./asset/img/paypal.png">
+                <img class="me-2 payment" src="./asset//img/امان.png">
+                <img class="me-2 payment" src="./asset/img/ميزه.png">
+                <img class="me-2 payment" src="./asset/img/fawry.png">
+                <img class="me-2 payment" src="./asset/img/Group 70.png">
+                <img class="me-2 payment" src="./asset/img/Group 70.png">
+                <img class="me-2 payment" src="./asset/img/orangeMoney.png">
+                <img class="me-2 payment" src="./asset/img/Vodafone.png">
+            </div>
+            <div class="ms-auto">
+                <h6 class="mb-3">Join our newsletter!</h6>
+                <form action="./register.html">
+                    <input type="email" class="input-box" placeholder="Your email address" required>
+                    <input type="submit" class="signup-btn" value="SIGN UP"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex">
+        <p class="m-auto p-3 textsec"><span>I'm Alive</span> 2025.</p>
+    </div>
+</div>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="./asset/js/swiper-bundle.min.js"></script>
+<script src="./asset/js/style.js?v=1.0"></script>
 </body>
-
 </html>
