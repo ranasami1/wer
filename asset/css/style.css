@@ -980,11 +980,12 @@ h4 {
     height:0;
     opacity: 0;
 }
-.promoCode .btn-success{
+.btn-success{
     background-color: #65BA8E;
     font-size: 10px;
     width: 200px;
     padding: 12px 0;
+    color: #ffff;
 }
 input[type="text"].form-control::placeholder {
     color: white !important;
@@ -1045,4 +1046,16 @@ form input::placeholder{
 }
 .offcanvas-body ul ul {
     display: none;
+}
+.border-success{
+    color: #65ba8e !important;
+    border-width: 5px !important;
+}
+.emptyCartsideMenue .btn-success{
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.emptyCartsideMenue img{
+    width: 120px;
 }
