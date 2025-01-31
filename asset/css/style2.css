@@ -17,12 +17,22 @@
 .bill p{
     font-size: 12px;
 }
-#notLogin {
+.notLogin {
     font-size: 14px;
 }
-#notLogin div a{
-    display: inline;
+.logForm{
+    display: none;
+}
+.notLogin .d-flex .login{
+    border-right: 1px solid #ffff;
+    padding: 0 10px 0 0;
+}
+.notLogin   .showLogform {
     text-decoration: underline;
+    color: #65BA8E;
+}
+.notLogin  input[type="checkbox"]:checked ~ .logForm {
+    display: block;
 }
 .promoCode {
     display: none;
@@ -36,6 +46,7 @@
 input[type="text"].form-control::placeholder {
     color: white !important;
   }
+
 .coupon .showCoupon {
     text-decoration: underline;
     color: #65BA8E;

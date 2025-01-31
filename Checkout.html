@@ -83,12 +83,15 @@
             <h2>CHECKOUT</h2>
         </div>
         <div class="checkout text-white container">
-            <div id="notLogin" class="mt-4 d-none">
-                <div>
-                    <p>Returning customer?</p>
-                    <a href="#logForm" onclick="loginForm()">Click here to login</a> | <a href="#">Register</a>
-                </div>
-                <form class="border col-4 container my-3 p-3 ms-0">
+            <div class="mt-4 notLogin d-none">
+                <div class="d-flex">
+                    <p class="login">Returning customer?<label for="showLogform" class="showLogform">
+                        Click here to login
+                    </label></p>
+                    <input type="checkbox" id="showLogform" style="display:none;">
+                   <a href="#" class="ms-1">Register</a>
+                </div>       
+                <form class="logForm border col-4 container my-3 p-3 ms-0">
                     <p>If you have shopped with us before, please enter your details below.</p>
                     <p>If you are a new customer, please proceed to the Billing section.</p>
                     <div class="mb-3">
