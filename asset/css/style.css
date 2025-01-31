@@ -448,6 +448,7 @@ form .form-group .form-control:focus{
     border-radius: 35px;
     text-align: center;
     margin: auto;
+    display: none;
 }
 .text-green{
     color: #65BA8E !important;
