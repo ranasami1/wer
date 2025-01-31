@@ -110,3 +110,6 @@ form input::placeholder{
 .input-group input {
     font-size: 10px;
 }
+.offcanvas-body ul ul {
+    display: none;
+}
