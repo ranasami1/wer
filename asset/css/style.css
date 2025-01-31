@@ -1054,7 +1054,6 @@ form input::placeholder{
 .emptyCartsideMenue{
     width: fit-content;
     margin: auto;
-    display: none;
 }
 .emptyCartsideMenue .btn-success{
     width: 120px;
