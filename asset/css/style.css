@@ -723,7 +723,7 @@ h4{
     position: relative;
     bottom: 100%;
 }
-.CartHead{
+.CartHead,.searchHead{
     background-image: url("../img/Final.jpg");
     background-repeat: no-repeat;
     background-size: cover;
