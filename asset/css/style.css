@@ -41,7 +41,7 @@ body {
 
 #footer {
     background-color: #061b1f;
-    height: auto;
+
 }
 
 #footer h6 {
@@ -54,7 +54,6 @@ body {
 #footer, #main-header {
     background-color: #061b1f !important;
     font-size: 14px;
-    height: auto;
 }
 
 #footer ul {
@@ -278,6 +277,9 @@ a {
 
     #mostPop li:nth-child(n+4) {
         display: none;
+    }
+    .offcanvas.offcanvas-start {
+        --bs-offcanvas-width: calc(75%);
     }
 
 }
@@ -980,12 +982,12 @@ h4 {
     height:0;
     opacity: 0;
 }
-.btn-success{
+ .btn-success{
     background-color: #65BA8E;
     font-size: 10px;
     width: 200px;
     padding: 12px 0;
-    color: #ffff;
+     color: #ffff;
 }
 input[type="text"].form-control::placeholder {
     color: white !important;
@@ -1054,6 +1056,7 @@ form input::placeholder{
 .emptyCartsideMenue{
     width: fit-content;
     margin: auto;
+    display: none;
 }
 .emptyCartsideMenue .btn-success{
     width: 120px;
