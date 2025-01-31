@@ -208,6 +208,9 @@ a{
     #mostPop li:nth-child(n+4){
        display: none;
     }
+    .offcanvas.offcanvas-start {
+        --bs-offcanvas-width: calc(75%);
+    }
    
  }
 .custom-search-bar input {
