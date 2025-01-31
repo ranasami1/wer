@@ -1,74 +1,106 @@
 @font-face {
-    font-family: 'Bw Modelica DEMO Black';
-    src: url('../fonts/BwModelicaDEMO-Black-BF65d6bd3d0f3ae.otf') format('opentype');
-    font-weight: bold;
-    font-style: bold;
-}
-@font-face {
-    font-family: 'Bw Modelica DEMO';
-    src: url('../fonts//BwModelicaDEMO-Regular-BF65d6bd3cf3fe5.otf') format('opentype');
+    font-family: 'BwModelica-Regular';
+    src: url('../fonts/otf/BwModelica-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'Bw Modelica';
-    src: url('../fonts//BwModelicaSS02DEMO-ExtraBoldUltraCondensed-BF65d6bd3aa1efd.otf') format('opentype');
-    font-weight: bolder;
-    font-style: bolder;
-}
-@font-face {
-    font-family: 'Bw Modelica SS02 DEMO Medium Ultra Cond';
-    src: url('../fonts//BwModelicaSS02DEMO-MediumUltraCondensed-BF65d6bd3ab0afb.otf') format('opentype');
-    font-weight: medium;
-    font-style: medium;
-}
-@font-face {
-    font-family: 'Bw Modelica DEMO Ultra Cond';
-    src: url('../fonts//BwModelicaDEMO-LightUltraCondensed-BF65d6bd3ca918c.otf') format('opentype');
-    font-weight: normal;
+    font-family: 'BwModelica-ExtraBold';
+    src: url('../fonts/otf/BwModelica-ExtraBold.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'BwModelica-Medium';
+    src: url('../fonts/otf/BwModelica-Medium.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BwModelica-Light';
+    src: url('../fonts/otf/BwModelica-Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 * {
-    padding:0;
-    margin:0;
-    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-    font-family:'Bw Modelica DEMO';
-    font-weight:normal;
+
+body {
+    font-family: 'BwModelica-Regular', sans-serif;
+    font-weight: normal;
     color: #65ba8e;
-    background-color:#082327;
+    background-color: #082327;
 }
-#footer,#headerSec2{
-    background-color: #0d1b1e !important;
+
+#footer {
+    background-color: #061b1f;
+    height: auto;
+}
+
+#footer h6 {
+    font-family: "BwModelica-ExtraBold", sans-serif;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+
+}
+
+#footer, #main-header {
+    background-color: #061b1f !important;
     font-size: 14px;
+    height: auto;
 }
-h6,h5{
-    font-family:"Bw Modelica DEMO Black" ;
-    font-weight:bold;
+
+#footer ul {
+    line-height: 25px;
+}
+
+h2, h5 {
+    font-family: "BwModelica-ExtraBold", sans-serif;
     color: #ffff;
-    text-transform:uppercase !important;
+    text-transform: uppercase !important;
 }
-a{
+
+.heading-title h2 {
+    font-size: 20px !important;
+    margin: 0;
+    padding: 0;
+}
+
+a {
     display: block;
     text-decoration: none;
-    font-family:'Bw Modelica DEMO';
-    color:#65ba8e;
+    font-family: 'BwModelica-Regular', sans-serif;
+    color: #65ba8e;
 }
-.payment{
+
+.payment {
     height: 45px;
 }
+
 .top-header {
     background-color: #082327;
     color: white;
     padding: 10px 0;
 }
+
+.header-wrap {
+    border-color: #65BA8E !important;
+}
+
 .country-btn {
     background: #04312b;
-    border: 1px solid linear-gradient(90deg, #3cb3ff, #6effa3) ;
+    border: 1px solid linear-gradient(90deg, #3cb3ff, #6effa3);
     color: white;
     font-size: 12px;
 }
+
 .dropdown {
     display: flex;
     align-items: center;
@@ -81,9 +113,8 @@ a{
     cursor: pointer;
 }
 
-.dropdown img {
+.country-flag {
     width: 20px;
-    height: 14px;
     margin-right: 8px;
 }
 
@@ -102,134 +133,175 @@ a{
     font-size: 8px;
     margin-left: 3px;
 }
+
 .support {
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 12px;
+    border-left: 2px solid #fff;
+    margin-left: 10px;
 }
+
 .social-icons a {
     color: white;
     text-decoration: none;
 }
-#websiteLogo{
-    width: 350px;
+
+.websiteLogo {
+    max-width: 350px;
 }
+
 .nav-link {
-    font-family: 'Bw Modelica SS02 DEMO Medium Ultra Cond';
-    font-weight: medium;
+    font-family: 'BwModelica-Medium', sans-serif;
+    font-weight: 400;
     color: white !important;
     font-size: 14px;
     position: relative;
     margin: 0 10px;
 }
+
 .nav-link.active {
+    font-family: 'BwModelica-ExtraBold', sans-serif;
     background-color: #051518;
-    font-weight:bolder;
+    font-weight: bolder;
     padding: 8px 16px;
     border-radius: 12px;
-    color: #a0eec0 !important;
+    color: #65BA8E !important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: #051518;
-    font-weight:bolder;
+    font-weight: bolder;
     padding: 8px 16px;
     border-radius: 12px;
-    color: #a0eec0 !important;
+    color: #65BA8E !important;
 }
+
 .nav-link.active::after {
     content: '';
     width: 6px;
     height: 6px;
-    background-color: #a0eec0;
+    background-color: #65BA8E;
     border-radius: 50%;
     position: absolute;
     bottom: -6px;
     left: 50%;
     transform: translateX(-50%);
 }
-#login-register a{
+
+#login-register a {
     color: #ffff !important;
-    font-family:'Bw Modelica';
-    font-weight: normal;
-    
+    font-family: 'BwModelica-Medium', sans-serif;
 }
+
+#login-register img {
+    max-width: 34px;
+}
+
 .custom-search-bar {
-    background-color:#051518; 
+    background-color: #051518;
     border-radius: 30px;
-    padding: 5px 20px; 
+    padding: 5px 20px 5px 12px;
     width: 50%;
 }
-@media (width<=768px) { 
-    .custom-search-bar{
+
+.cart {
+    background-image: linear-gradient(to right, #1e649d, #19689e, #166c9e, #166f9e, #18739e, #0b7aa0, #0080a2, #0087a3, #0093a4, #1c9ea2, #39a99e, #55b398);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+}
+
+.game-name {
+    font-family: "BwModelica-ExtraBold", sans-serif;
+}
+
+@media (width <= 768px) {
+    .custom-search-bar {
         width: 70%;
     }
-    #wallet-cart{
+
+    #wallet-cart {
         position: absolute;
         top: 20px;
-        right:5px;
+        right: 5px;
     }
-    .headerMenu{
+
+    #headerMenu {
         position: absolute;
         top: 20px;
-        left:5px;
+        left: 5px;
     }
-    #headerSec2 div:nth-child(1){
+
+    #main-header div:nth-child(1) {
         border: none !important;
     }
+
     #visible li:nth-child(n+4) {
         display: none;
     }
-    #game-card {
-     width: 120px;
+
+    .game-card {
+        width: 120px;
     }
-    #websiteLogo{
-        width: 170px;
+
+    .websiteLogo {
+        max-width: 170px;
     }
-    #price{
+
+    .price {
         font-size: 8px;
         padding-bottom: 10px;
     }
-    #game-name{
+
+    .game-name {
         font-size: smaller;
     }
-    .discount-badge{
+
+    .discount-badge {
         font-size: xx-small;
         padding: 2px;
     }
-    #card{
+
+    #card {
         width: auto !important;
     }
+
     #staredCards li:nth-child(n+2) {
-            display: none;
-        }
-    
-    #gridCards li:nth-child(n+3) {
         display: none;
     }
-    #mostPop li:nth-child(n+4){
-       display: none;
+
+    .gridCards li:nth-child(n+3) {
+        display: none;
     }
-    .offcanvas.offcanvas-start {
-        --bs-offcanvas-width: calc(75%);
+
+    #mostPop li:nth-child(n+4) {
+        display: none;
     }
-   
- }
+
+}
+
 .custom-search-bar input {
-    background: none; 
-    border: none; 
-    color: #427c62;
-    outline: none; 
-    width: 100%; 
+    background: none;
+    border: none;
+    color: #65BA8E;
+    outline: none;
+    width: 100%;
+    padding-left: 15px;
 }
-.custom-search-bar input::placeholder{
-    color: #427c62;
+
+.custom-search-bar input::placeholder {
+    color: #65BA8E;
 }
+
 .input-box {
     padding: 8px 12px;
     font-size: 14px;
     border: 2px solid transparent;
     border-radius: 8px;
-    background: linear-gradient(#0f1a1e, #0f1a1e) padding-box, 
-                linear-gradient(90deg, #3cb3ff, #6effa3) border-box;
+    background: linear-gradient(#0f1a1e, #0f1a1e) padding-box,
+    linear-gradient(90deg, #3cb3ff, #6effa3) border-box;
     color: #b8e0d2;
     outline: none;
     width: 220px;
@@ -239,7 +311,7 @@ a{
     color: #6c9d96;
 }
 
-.signup-btn{
+.signup-btn {
     padding: 8px 14px;
     font-size: 14px;
     margin: 5px;
@@ -254,20 +326,23 @@ a{
 .signup-btn:hover {
     opacity: 0.85;
 }
-#signin-sec1{
+
+#signin-sec1 {
     background-image: url("../img/myacc_bg.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 360px;
     border-radius: 35px;
     padding: 60px;
     color: #ffff;
 }
-#signin-baner{
-   margin-left: 95px;
-   margin-top: 40px;
+
+#signin-baner {
+    margin-left: 95px;
+    margin-top: 40px;
 }
-.signin-btn,#RETURN{
+
+.signin-btn, #RETURN {
     width: 150px;
     border-radius: 30px;
     font-size: 14px;
@@ -279,156 +354,197 @@ a{
     cursor: pointer;
     background: linear-gradient(90deg, #1e616f, #5fb48f);
 }
-h2,h1{
+
+h2, h1 {
     font-weight: bold;
     padding: 10px 0;
     color: #ffff;
 }
-#sign-registersec{
+
+#sign-registersec {
     background-color: #051c1e;
     border-radius: 35px;
 }
-#textsec{
-    font-family:"Bw Modelica DEMO"!important;
+
+.textsec {
+    font-family: "BwModelica-Regular", sans-serif !important;
     font-weight: normal !important;
-    color:#346a56;
+    color: #346a56;
 }
-#btn-group button{
+
+#btn-group button {
     outline: none;
     border: none;
     margin: 0;
     height: 40px;
-    font-family:"Bw Modelica DEMO Black";
+    font-family: "BwModelica-Black", sans-serif;
     color: #ffff;
     background: #051518;
 }
-#btn-group :nth-child(1){
+
+#btn-group :nth-child(1) {
     border-top-left-radius: 35px;
 }
-#btn-group :nth-child(2){
+
+#btn-group :nth-child(2) {
     border-top-right-radius: 35px;
 }
-form .form-group .form-control{
-   background: #051518;
-   border: 1px solid #051518;
-   border-radius: 30px;
-   display: flex;
-   align-items: center;
-   color: #65ba8e;
-   width:50%;
-   text-align: center;
+
+form .form-group .form-control {
+    background: #051518;
+    border: 1px solid #051518;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: #65ba8e;
+    width: 50%;
+    text-align: center;
 }
-form .form-group .form-control::placeholder{
-    color:#285344;
+
+form .form-group .form-control::placeholder {
+    color: #285344;
 }
-form .form-group .form-control:focus{
-    border-color:linear-gradient(90deg, #2b4285, #6effa3) !important;
+
+form .form-group .form-control:focus {
+    border-color: linear-gradient(90deg, #2b4285, #6effa3) !important;
 }
-#btn-group .active{
+
+#btn-group .active {
     background: linear-gradient(90deg, #1a2f4f, #5fb48f, #1a2f4f);
 }
-.notActive{
+
+.notActive {
     background: #051518;
 }
-#Register-btn,#registerBtn{
-    width:120px;
+
+#Register-btn, #registerBtn {
+    width: 120px;
     margin: auto;
     border-radius: 35px;
     background: linear-gradient(90deg, #1a2f4f, #5fb48f, #1a2f4f);
     color: #ffff;
-    font-family:"Bw Modelica DEMO Black";
+    font-family: "BwModelica-Black", sans-serif;
 }
+
 .game-offer {
     border-radius: 15px;
     padding: 20px;
 }
-#game-card img {
+
+.game-card img {
     border-radius: 10px;
     width: fit-content;
 }
-#game-card a p{
+
+.game-card a p {
     margin: 0 !important;
 }
-#game-card a h5{
- margin: 0 !important;
+
+.game-card a h5 {
+    margin: 0 !important;
 }
+
 .btn-custom {
     background-color: #5fa37b;
     color: white;
     border-radius: 20px;
 }
-#rows{
-    background-color: #113331;
+
+.rows {
+    background-color: #051a1f;
     border-radius: 20px;
-    overflow:visible;
+    overflow: visible;
     margin: 50px 0 !important;
 }
 
-#card{
+#card {
     max-width: 270px !important;
     min-height: 220px;
-    background-color:#1a413a;
+    background-color: #1a413a;
     border-radius: 30px;
     color: #ffff;
 }
-#card #rate p,#date{
-    font-family:"Bw Modelica DEMO Ultra Cond";
+
+#card #rate p, #date {
+    font-family: "BwModelica-Light", sans-serif;
     font-weight: normal;
     color: #3E7D64;
 }
 
-#date,#price{
-    font-size:12px;
+#date, .price {
+    font-size: 12px;
 }
-.fa-star{
+
+.fa-star {
     color: #051518;
 }
-.checked{
-    color:#65ba8e;
+
+.checked {
+    color: #65ba8e;
 }
-#Hline{
+
+.Hline {
     width: 90%;
     height: 5px;
     background: #5fa37b;
     border-radius: 20px;
 }
-#rows #secHeader{
-    background:linear-gradient(90deg, #2e4e94, #6effa3,  #1583a5);
-    padding:10px;
+
+.rows .heading-title {
+    background-image: linear-gradient(to right, #274b97, #345791, #3b6590, #46778f, #4f888f, #5aa48d, #60b28f, #60b28f, #59b58e, #3e9f94, #1c89a0, #087ab3);
+    padding: 10px;
     width: 40%;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
     color: #ffff;
     position: relative;
     top: -5px;
     text-align: center;
 }
-#game-card{
+
+.game-card {
     max-width: 390px;
     min-width: 80px;
-    background: #1a413a;
+    background: #19403a;
     border-radius: 20px;
     padding: 10px;
-    color: white;
-    text-align:left;
+    color: #ffffff !important;
+    text-align: left;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
-#exclusiveOffer #game-card{
+
+#exclusiveOffer .game-card {
     max-width: 200px !important;
 }
 
-#game-card:hover,#voucherCard:hover,#paymentCard:hover{
-    border: 2px solid;
-    border-image-source: linear-gradient(to right,#6effa3,  #1583a5);
-    border-image-slice: 1;
-    transition-timing-function:ease;
-    background: #0e2627 !important;
+.game-card:hover, #voucherCard:hover, #paymentCard:hover {
+    position: relative;
 }
-#game-card img {
+
+.game-card:hover, #voucherCard:hover, #paymentCard:hover {
+    background: #021013;
+}
+
+.game-card:hover:before, #voucherCard:hover:before, #paymentCard:hover:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, #6effa3, #1583a5);
+    padding: 3px;
+    mask: linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+    mask-composite: exclude;
+
+}
+
+
+.game-card img {
     width: 100%;
     border-radius: 10px;
 }
+
 .discount-badge {
     position: absolute;
     bottom: 0;
@@ -441,103 +557,121 @@ form .form-group .form-control:focus{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.toggle_form{
+
+.toggle_form {
     display: none !important;
 }
-#alert{
+
+#alert {
     background: red;
     color: #ffff;
+    width: 50%;
     border-radius: 35px;
     text-align: center;
     margin: auto;
-    display: none;
 }
-.text-green{
+
+.text-green {
     color: #65BA8E !important;
 }
-#starsContainer{
+
+.starsContainer {
     background-color: #12332e;
     padding: 0 5px;
     border-radius: 5px;
 }
-#hidden{
+
+.hidden {
     height: 0;
     overflow: hidden;
     opacity: 0;
     transition: height 1s ease, opacity 1s ease;
 }
-.toggleButton{
+
+.toggleButton {
     width: 40px;
     height: 40px;
     border-radius: 20px;
     border: none;
-    background:linear-gradient(90deg, #6effa3,  #1583a5);
+    background: linear-gradient(90deg, #6effa3, #1583a5);
     color: #fff;
     position: relative;
     bottom: -20px;
 }
-.PrivacyHead{
+
+.PrivacyHead {
     background-image: url("../img/Final.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.text_content{
+
+.text_content {
     color: #ffff;
     font-size: 14px;
     text-transform: capitalize;
 }
 
-ol li a{
+ol li a {
     color: #ffff;
     display: flex;
     text-align: right;
 }
-ol li a::after{
+
+ol li a::after {
     border-bottom: 1px dotted #ffff;
     content: '';
     flex: 1;
 }
-#left-side{
+
+#left-side {
     color: #fff;
     font-size: 14px;
 }
-h4{
-    font-family:"Bw Modelica DEMO Black" ;
-    font-weight:bold;
+
+h4 {
+    font-family: "BwModelica-Black", sans-serif;
+    font-weight: bold;
     color: #65BA8E;
 }
+
 .image-container {
-    position: relative; 
+    position: relative;
 }
+
 .main-image {
     display: block;
 }
+
 .heart-icon {
     position: absolute;
-    top: 40px; 
+    top: 40px;
     left: -20px;
-    width: 45px; 
+    width: 45px;
     height: 45px;
     z-index: 2;
 }
 
-#banner{
-    background:linear-gradient(90deg, #2e4e94, #59b392,  #1583a5);
+#banner {
+    background: linear-gradient(90deg, #2e4e94, #59b392, #1583a5);
     color: #ffff;
     border-radius: 10px;
     font-size: 12px;
     padding: 5px 10px;
 }
-#banner img{
+
+#banner img {
     width: 30px;
 }
-#game-list{
-        list-style: none;
-        font-size: 10px;
+
+#game-list {
+    list-style: none;
+    font-size: 10px;
 }
-#game-list li{     
-        margin-bottom: 12px;
+
+#game-list li {
+    margin-bottom: 12px;
 }
+
 #game-list li::before {
     content: "";
     width: 12px;
@@ -547,25 +681,29 @@ h4{
     display: inline-block;
     margin-right: 10px;
 }
-#game-list li a{
-    display:inline;
+
+#game-list li a {
+    display: inline;
 }
-#riotId,#Email{
-    background: #0d2728; 
-    border: .5px solid #082327; 
+
+#riotId, #Email {
+    background: #0d2728;
+    border: .5px solid #082327;
     border-radius: 20px;
     padding: 5px;
     color: #65ba8e69;
-    outline: none; 
+    outline: none;
     width: 93%;
 }
-#riotId::placeholder,#Email::placeholder{
+
+#riotId::placeholder, #Email::placeholder {
     color: #65ba8e69;
 }
-#signN{
+
+#signN {
     width: 40px;
-    height:40px;
-    background:linear-gradient(90deg, #6effa3,  #1583a5);
+    height: 40px;
+    background: linear-gradient(90deg, #6effa3, #1583a5);
     border-radius: 20px;
     position: relative;
     bottom: 50%;
@@ -574,6 +712,7 @@ h4{
     color: #ffff;
     font-weight: bold;
 }
+
 .live-badge {
     display: inline-flex;
     align-items: center;
@@ -594,25 +733,29 @@ h4{
     border-radius: 50%;
     margin-right: 8px;
 }
-#voucherCard,#paymentCard{
+
+#voucherCard, #paymentCard {
     width: 110px;
     height: 130px;
     background-color: #1a413a;
     overflow: hidden;
     border-radius: 20px;
-    font-size: 10px;  
+    font-size: 10px;
 }
-.Starred{
+
+.Starred {
     overflow: visible !important;
     background-color: #1a413a !important;
 }
-.Regular{
+
+.Regular {
     background-color: #1a413a !important;
 }
-#voucherCard #badge{
+
+#voucherCard #badge {
     color: black;
     font-weight: bold;
-    background:#fdcb41;
+    background: #fdcb41;
     width: 80px;
     position: relative;
     right: 20px;
@@ -621,23 +764,27 @@ h4{
     height: 15px;
 
 }
-#voucherCard i{
+
+#voucherCard i {
     color: #8f760b4c;
     position: relative;
     font-size: 16px;
     left: 50%;
-    top:-40px;
+    top: -40px;
 }
-#v-price{
+
+#v-price {
     color: #0178BD;
     background-color: #FFFFFF;
     width: 100%;
 }
-#oldPrice{
+
+#oldPrice {
     margin: 0 !important;
     text-decoration: line-through 1.5px #ffff;
 }
-#discount{
+
+#discount {
     width: 40px;
     position: relative;
     left: 55px;
@@ -647,50 +794,58 @@ h4{
     border-top-right-radius: 10px;
     text-align: center;
 }
-#diffPayment{
-    background:#C0392B;
+
+#diffPayment {
+    background: #C0392B;
     width: 50%;
     text-transform: uppercase;
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    min-height: 30px;    
+    min-height: 30px;
 }
-#diffPayment a{
+
+#diffPayment a {
     color: #ffff !important;
 }
-.last-sec{
+
+.last-sec {
     color: #ffff !important;
 }
-.checkbox{
+
+.checkbox {
     -webkit-appearance: none;
     width: 20px;
-    height:20px;
+    height: 20px;
     border-radius: 5px;
-    border:2px solid #082327;
+    border: 2px solid #082327;
     cursor: pointer;
     background: transparent;
     margin: 0 5px 0 0;
 
 }
-.checkbox:checked{
-    border: 2px solid linear-gradient(90deg, #6effa3,  #1583a5);
+
+.checkbox:checked {
+    border: 2px solid linear-gradient(90deg, #6effa3, #1583a5);
 }
-.checkbox:checked::before{
-    background: linear-gradient(90deg, #6effa3,  #1583a5);
+
+.checkbox:checked::before {
+    background: linear-gradient(90deg, #6effa3, #1583a5);
     display: block;
 }
-.checkbox::before{
+
+.checkbox::before {
     content: "";
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color:linear-gradient(90deg, #6effa3,  #1583a5);
+    background-color: linear-gradient(90deg, #6effa3, #1583a5);
     position: relative;
     top: 30%;
     left: 30%;
 }
-#buyNow{
+
+#buyNow {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -705,58 +860,67 @@ h4{
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-#buyNow:hover{
+
+#buyNow:hover {
     background: linear-gradient(to right, #6effa3, #1583a5);
     color: white;
 }
-#popGame{
+
+#popGame {
     width: 170px;
-    height: 120px;  
+    height: 120px;
 }
-#popGame img{
+
+#popGame img {
     width: 90%;
     padding: 10px;
     border-radius: 20px;
-    background-color:#65BA8E;
-} 
-#popGame a{
+    background-color: #65BA8E;
+}
+
+#popGame a {
     width: 90%;
     height: 90%;
     position: relative;
     bottom: 100%;
 }
-.CartHead,.searchHead{
+
+.CartHead {
     background-image: url("../img/Final.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff9d;
-    font-size:x-large;
+    font-size: x-large;
     font-weight: bold;
 }
-.CartHead a{
+
+.CartHead a {
     color: #ffffff9d !important;
-    font-size:x-large;
+    font-size: x-large;
     font-weight: bold;
 }
-.CartHead a:hover{
+
+.CartHead a:hover {
     color: #ffff !important;
     transition: .5s ease-out;
 }
-.CartHead .active{
+
+.CartHead .active {
     text-decoration: underline;
-    text-decoration-color:#65BA8E;
-    text-decoration-thickness:3px;
+    text-decoration-color: #65BA8E;
+    text-decoration-thickness: 3px;
     color: #ffff !important;
     text-underline-offset: 10px;
 }
-#cart{
+
+#cart {
     color: #ffff;
 }
-#cart p{
-    font-size: 12px;
-    
-}
 
+#cart p {
+    font-size: 12px;
+
+}
 .btn-update, .btn-checkout {
     background-color: #65BA8E;
     color: white !important;
@@ -824,7 +988,7 @@ h4{
 }
 input[type="text"].form-control::placeholder {
     color: white !important;
-  }
+}
 
 .coupon .showCoupon {
     text-decoration: underline;
@@ -859,7 +1023,7 @@ form input::placeholder{
     top: -30px;
     left: 10px;
     transform: translateX(-50%);
-    
+
     /* Create the triangle using borders */
     width: 0;
     height: 0;
