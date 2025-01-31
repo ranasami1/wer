@@ -17,6 +17,15 @@
 .bill p{
     font-size: 12px;
 }
+.bill i{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background:linear-gradient(to right, #1f649b,#60b58f);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
 .notLogin {
     font-size: 14px;
 }
@@ -74,6 +83,22 @@ form input::placeholder{
 .dropdownDiv{
     height: 0;
     opacity: 0;
+}
+.dropdownDiv:before {
+    content: '';
+    position: relative;
+    top: -38px;
+    left: 10px;
+    transform: translateX(-50%);
+    
+    /* Create the triangle using borders */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent black transparent;
+
+
 }
 .payment-option input:checked ~ .dropdownDiv{
     height: fit-content;
