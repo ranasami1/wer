@@ -29,20 +29,6 @@
         opacity: 1;
     }
 }
-.visited-path {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.breadcrumb-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
 .visited-path a{
     color: rgb(218, 218, 218);
 }

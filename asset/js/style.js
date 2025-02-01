@@ -87,8 +87,9 @@ function toggleGameList(event) {
 
 class LinkTracker {
     constructor() {
-        this.visitedLinks = new Set();
+        this.visitedLinks = new Set(JSON.parse(localStorage.getItem('visitedLinks')) || []);
         this.initializeEventListeners();
+        this.restoreVisitedLinks();
     }
 
     initializeEventListeners() {
@@ -96,24 +97,21 @@ class LinkTracker {
             wrapper.addEventListener('click', (e) => {
                 const linkText = wrapper.querySelector('.nav-link').textContent.trim();
                 this.markAsVisited(linkText);
-                // Prevent navigation
+                this.navigateToCategoryPage();
                 e.preventDefault();
                 e.stopPropagation();
             });
-            
+
             wrapper.querySelectorAll('.dropdown-item').forEach(item => {
                 item.addEventListener('click', (e) => {
                     const parentLink = wrapper.querySelector('.nav-link').textContent.trim();
                     const childLink = item.textContent.trim();
                     
-                    // Mark parent as visited
                     this.markAsVisited(parentLink);
-                    // Mark child as visited
                     this.markAsVisited(childLink);
-                    // Update path
                     this.updatePath([parentLink, childLink]);
+                    this.navigateToCategoryPage();
                     
-                    // Prevent navigation
                     e.preventDefault();
                     e.stopPropagation();
                 });
@@ -124,6 +122,7 @@ class LinkTracker {
     markAsVisited(text) {
         if (!this.visitedLinks.has(text)) {
             this.visitedLinks.add(text);
+            localStorage.setItem('visitedLinks', JSON.stringify([...this.visitedLinks]));
             this.updateBreadcrumb(text);
         }
     }
@@ -141,14 +140,7 @@ class LinkTracker {
         breadcrumbList.appendChild(separator);
         breadcrumbList.appendChild(breadcrumbItem);
 
-        // Update the page title with the last visited link
         this.updatePageTitle(text);
-
-        // Mark corresponding dropdown wrapper as visited
-        const wrapper = document.querySelector(`.dropdown-wrapper [href="#"]:contains("${text}")`).closest('.dropdown-wrapper');
-        if (wrapper) {
-            wrapper.classList.add('visited');
-        }
     }
 
     updatePath(pathArray) {
@@ -156,7 +148,7 @@ class LinkTracker {
         breadcrumbList.innerHTML = '';
         
         pathArray.forEach((item, index) => {
-            if (index > 0) {  // Only add separator if not first item
+            if (index >= 0) {
                 const separator = document.createElement('span');
                 separator.className = 'breadcrumb-separator';
                 separator.textContent = '/';
@@ -169,7 +161,6 @@ class LinkTracker {
             breadcrumbList.appendChild(breadcrumbItem);
         });
         
-        // Update the page title with the last visited link
         this.updatePageTitle(pathArray[pathArray.length - 1]);
     }
 
@@ -179,7 +170,18 @@ class LinkTracker {
             pageTitle.textContent = text;
         }
     }
+
+    navigateToCategoryPage() {
+        if (!window.location.href.includes('category.html')) {
+            window.location.href = 'category.html';
+        }
+    }
+
+    restoreVisitedLinks() {
+        this.visitedLinks.forEach(link => {
+            this.updateBreadcrumb(link);
+        });
+    }
 }
 
-// Initialize the tracker
 const tracker = new LinkTracker();
