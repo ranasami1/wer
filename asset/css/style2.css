@@ -1,0 +1,31 @@
+.dropdown-wrapper {
+    position: relative;
+}
+
+/* Hide dropdown by default */
+.dropdown-menu-dark {
+    display: none;
+    background-color: #333;
+    min-width: 200px;
+}
+
+/* Show dropdown when parent is focused */
+.dropdown-wrapper:focus-within .dropdown-menu-dark {
+    display: block;
+}
+
+/* Optional: Add smooth transition */
+.dropdown-menu-dark {
+    opacity: 0;
+    animation: fadeIn 0.2s ease forwards;
+}
+.dropdown-menu-dark a:active{
+    background-color: #051518;
+    color: #65ba8e;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
