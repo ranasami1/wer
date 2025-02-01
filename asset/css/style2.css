@@ -35,3 +35,6 @@
 .visited-path a:hover{
     color: #ffff;
 }
+.sidebar {
+    min-height: 100vh;
+}
