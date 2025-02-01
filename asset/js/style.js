@@ -85,6 +85,101 @@ function toggleGameList(event) {
     }
 }
 
+class LinkTracker {
+    constructor() {
+        this.visitedLinks = new Set();
+        this.initializeEventListeners();
+    }
 
-  
+    initializeEventListeners() {
+        document.querySelectorAll('.dropdown-wrapper').forEach(wrapper => {
+            wrapper.addEventListener('click', (e) => {
+                const linkText = wrapper.querySelector('.nav-link').textContent.trim();
+                this.markAsVisited(linkText);
+                // Prevent navigation
+                e.preventDefault();
+                e.stopPropagation();
+            });
+            
+            wrapper.querySelectorAll('.dropdown-item').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    const parentLink = wrapper.querySelector('.nav-link').textContent.trim();
+                    const childLink = item.textContent.trim();
+                    
+                    // Mark parent as visited
+                    this.markAsVisited(parentLink);
+                    // Mark child as visited
+                    this.markAsVisited(childLink);
+                    // Update path
+                    this.updatePath([parentLink, childLink]);
+                    
+                    // Prevent navigation
+                    e.preventDefault();
+                    e.stopPropagation();
+                });
+            });
+        });
+    }
 
+    markAsVisited(text) {
+        if (!this.visitedLinks.has(text)) {
+            this.visitedLinks.add(text);
+            this.updateBreadcrumb(text);
+        }
+    }
+
+    updateBreadcrumb(text) {
+        const breadcrumbItem = document.createElement('a');
+        breadcrumbItem.className = 'breadcrumb-item';
+        breadcrumbItem.textContent = text;
+        
+        const separator = document.createElement('span');
+        separator.className = 'breadcrumb-separator';
+        separator.textContent = '/';
+        
+        const breadcrumbList = document.getElementById('breadcrumbList');
+        breadcrumbList.appendChild(separator);
+        breadcrumbList.appendChild(breadcrumbItem);
+
+        // Update the page title with the last visited link
+        this.updatePageTitle(text);
+
+        // Mark corresponding dropdown wrapper as visited
+        const wrapper = document.querySelector(`.dropdown-wrapper [href="#"]:contains("${text}")`).closest('.dropdown-wrapper');
+        if (wrapper) {
+            wrapper.classList.add('visited');
+        }
+    }
+
+    updatePath(pathArray) {
+        const breadcrumbList = document.getElementById('breadcrumbList');
+        breadcrumbList.innerHTML = '';
+        
+        pathArray.forEach((item, index) => {
+            if (index > 0) {  // Only add separator if not first item
+                const separator = document.createElement('span');
+                separator.className = 'breadcrumb-separator';
+                separator.textContent = '/';
+                breadcrumbList.appendChild(separator);
+            }
+            
+            const breadcrumbItem = document.createElement('a');
+            breadcrumbItem.className = 'breadcrumb-item';
+            breadcrumbItem.textContent = item;
+            breadcrumbList.appendChild(breadcrumbItem);
+        });
+        
+        // Update the page title with the last visited link
+        this.updatePageTitle(pathArray[pathArray.length - 1]);
+    }
+
+    updatePageTitle(text) {
+        const pageTitle = document.querySelector('.pageTitle');
+        if (pageTitle) {
+            pageTitle.textContent = text;
+        }
+    }
+}
+
+// Initialize the tracker
+const tracker = new LinkTracker();
