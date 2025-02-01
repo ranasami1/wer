@@ -57,21 +57,100 @@
         </div>
     </div>
     <div class="container d-flex justify-content-sm-center justify-content-lg-between py-4">
-        <div id="headerMenu">
-            <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
+        <div class="headerMenu">
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <img style="width: 30px;cursor: pointer;" src="./asset/img/menu.png">
+            </a>
+            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown">
+                            PC
+                        </a>
+                        <ul class="PC dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown">
+                            PNS
+                        </a>
+                        <ul class="PNS dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown">
+                            XBOX
+                        </a>
+                        <ul class="XBOX dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown">
+                            MOBILE
+                        </a>
+                        <ul class="MOBILE dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown">
+                            Entertainment
+                        </a>
+                        <ul class="Entertainment dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="custom-search-bar d-flex align-items-center m-auto">
             <img style="width: 35px; margin: 0 5px;" src="./asset/img/search.png">
             <input type="text" placeholder="What are you looking for?">
         </div>
         <div id="wallet-cart" class="d-flex gap-1">
-            <a class="d-inline cart" href="./shoppingCart.html">
+            <a class="d-inline cart" href="./shoppingCart.html"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <svg width="20" height="20" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.34027 3.57171C2.37295 2.47418 2.7963 1.55471 3.65031 0.843449C4.2934 0.296935 5.11633 -0.00264476 5.96702 8.16578e-05C6.97857 -0.00614069 7.85159 0.343267 8.57002 1.04065C9.28844 1.73803 9.63571 2.58906 9.65912 3.58463C9.8108 3.58463 9.95419 3.58463 10.0981 3.58463C10.5267 3.58406 10.9429 3.72556 11.2793 3.98619C11.6157 4.24682 11.8525 4.6113 11.9514 5.02056C12.0392 5.36374 11.9939 5.70119 11.9266 6.0415C11.69 7.23811 11.4598 8.43902 11.2267 9.63802C11.1052 10.2603 10.9945 10.8868 10.8575 11.5047C10.656 12.4141 9.90445 12.999 8.95533 13C6.99499 13 5.03464 13 3.0743 13C2.05593 13 1.30142 12.3687 1.11852 11.386C0.930747 10.3761 0.72834 9.36902 0.533249 8.36052C0.363032 7.48078 0.184517 6.60199 0.0260051 5.71985C-0.15104 4.73385 0.597622 3.74211 1.61112 3.61383C1.84572 3.58032 2.08665 3.58511 2.34027 3.57171ZM3.26695 3.5741H8.73341C8.75633 2.20375 7.58969 0.873124 5.9636 0.893705C4.33752 0.914287 3.23428 2.27076 3.26793 3.57554L3.26695 3.5741ZM3.71421 7.16775C3.71228 6.93001 3.61454 6.70268 3.44237 6.53542C3.2702 6.36816 3.03758 6.27457 2.79533 6.27508C2.55299 6.27735 2.32143 6.37369 2.15125 6.54302C1.98108 6.71236 1.88613 6.94092 1.88717 7.17875C1.89048 7.41455 1.98784 7.63969 2.15835 7.80585C2.32886 7.97202 2.55894 8.06599 2.79923 8.06759C3.04187 8.06696 3.2744 7.97212 3.44602 7.80379C3.61764 7.63545 3.71441 7.40731 3.71518 7.16918L3.71421 7.16775ZM9.1948 6.27364C8.95242 6.27529 8.72055 6.371 8.54985 6.53987C8.37914 6.70874 8.28346 6.93705 8.28373 7.17493C8.28652 7.41077 8.38336 7.63616 8.55349 7.80276C8.72362 7.96936 8.95349 8.06392 9.19382 8.06616C9.43609 8.06604 9.66848 7.97193 9.84034 7.80435C10.0122 7.63678 10.1096 7.40932 10.1112 7.17157C10.1103 6.93375 10.0135 6.70595 9.84199 6.53796C9.67045 6.36997 9.43812 6.27546 9.19578 6.27508L9.1948 6.27364Z"
                           fill="white"/>
                 </svg>
-
             </a>
+            <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header border-bottom border-success">
+                  <h5 id="offcanvasRightLabel">Shopping Cart</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="emptyCartsideMenue align-items-center text-white">
+                    <img src="./asset/img/empty-cart.png">
+                    <p>No products in the cart.</p>
+                    <button type="button" class="btn btn-success">Return to shop</button>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 </div>
