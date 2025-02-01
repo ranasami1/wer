@@ -44,6 +44,15 @@ body {
 
 }
 
+.middle-footer {
+    border-bottom: 4px solid #0c343a;
+    border-top: 4px solid #0c343a;
+}
+
+.bottom-footer {
+    border-bottom: 4px solid #0c343a;
+}
+
 #footer h6 {
     font-family: "BwModelica-ExtraBold", sans-serif;
     color: #ffffff !important;
@@ -77,6 +86,8 @@ a {
     text-decoration: none;
     font-family: 'BwModelica-Regular', sans-serif;
     color: #65ba8e;
+    z-index: 999;
+    position: inherit;
 }
 
 .payment {
@@ -224,7 +235,7 @@ a {
     #wallet-cart {
         position: absolute;
         top: 20px;
-        right: 5px;
+        right: 10%;
     }
 
     .headerMenu {
@@ -241,9 +252,6 @@ a {
         display: none;
     }
 
-    .game-card {
-        width: 120px;
-    }
 
     .websiteLogo {
         max-width: 170px;
@@ -263,10 +271,6 @@ a {
         padding: 2px;
     }
 
-    #card {
-        width: auto !important;
-    }
-
     #staredCards li:nth-child(n+2) {
         display: none;
     }
@@ -278,9 +282,11 @@ a {
     #mostPop li:nth-child(n+4) {
         display: none;
     }
+
     .offcanvas.offcanvas-start {
         --bs-offcanvas-width: calc(75%);
     }
+
     .offcanvas.offcanvas-end {
         --bs-offcanvas-width: calc(75%);
     }
@@ -463,8 +469,6 @@ form .form-group .form-control:focus {
 }
 
 #card {
-    max-width: 270px !important;
-    min-height: 220px;
     background-color: #1a413a;
     border-radius: 30px;
     color: #ffff;
@@ -508,7 +512,6 @@ form .form-group .form-control:focus {
 }
 
 .game-card {
-    max-width: 390px;
     min-width: 80px;
     background: #19403a;
     border-radius: 20px;
@@ -519,9 +522,6 @@ form .form-group .form-control:focus {
     overflow: hidden;
 }
 
-#exclusiveOffer .game-card {
-    max-width: 200px !important;
-}
 
 .game-card:hover, #voucherCard:hover, #paymentCard:hover {
     position: relative;
@@ -552,7 +552,7 @@ form .form-group .form-control:focus {
 
 .discount-badge {
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     right: 10px;
     background: #65ba8e;
     color: white;
@@ -925,34 +925,41 @@ h4 {
     font-size: 12px;
 
 }
+
 .btn-update, .btn-checkout {
     background-color: #65BA8E;
     color: white !important;
     font-weight: bold;
 }
-.btn-update:hover, .btn-checkout:hover{
+
+.btn-update:hover, .btn-checkout:hover {
     background-color: #65BA8E;
 }
+
 .cart-item img {
     max-width: 80px;
 }
-.deleteBtn{
+
+.deleteBtn {
     font-size: 10px;
     border-radius: 100%;
 }
-.bill{
+
+.bill {
     font-size: 14px !important;
 }
-.bill .Cryptocurrency{
+
+.bill .Cryptocurrency {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background:linear-gradient(to right, #1f649b,#60b58f);
+    background: linear-gradient(to right, #1f649b, #60b58f);
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-.bill .alertIcon{
+
+.bill .alertIcon {
     width: 20px;
     height: 20px;
     border: 2px solid black;
@@ -963,34 +970,42 @@ h4 {
     font-weight: bolder;
 
 }
+
 .notLogin {
     font-size: 14px;
 }
-.logForm{
+
+.logForm {
     display: none;
 }
-.notLogin .d-flex .login{
+
+.notLogin .d-flex .login {
     border-right: 1px solid #ffff;
     padding: 0 10px 0 0;
 }
-.notLogin   .showLogform {
+
+.notLogin .showLogform {
     text-decoration: underline;
     color: #65BA8E;
 }
-.notLogin  input[type="checkbox"]:checked ~ .logForm {
+
+.notLogin input[type="checkbox"]:checked ~ .logForm {
     display: block;
 }
+
 .promoCode {
-    height:0;
+    height: 0;
     opacity: 0;
 }
- .btn-success{
+
+.btn-success {
     background-color: #65BA8E;
     font-size: 10px;
     width: 200px;
     padding: 12px 0;
-     color: #ffff;
+    color: #ffff;
 }
+
 input[type="text"].form-control::placeholder {
     color: white !important;
 }
@@ -1006,22 +1021,25 @@ input[type="text"].form-control::placeholder {
     transition: all .8s ease-in-out;
 }
 
-form input::placeholder{
+form input::placeholder {
     color: #ffff !important;
 }
-.text-success{
+
+.text-success {
     color: #65BA8E !important;
 }
+
 /*.bill{
     background-image: url(../img/—Pngtree—torn\ notebook\ paper\ coiled\ paper_8243306.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size:cover;
 }*/
-.dropdownDiv{
+.dropdownDiv {
     height: 0;
     opacity: 0;
 }
+
 .dropdownDiv:before {
     content: '';
     position: relative;
@@ -1038,45 +1056,66 @@ form input::placeholder{
 
 
 }
-.payment-option input:checked ~ .dropdownDiv{
+
+.payment-option input:checked ~ .dropdownDiv {
     height: fit-content;
     opacity: 1;
-    transition:all 0.8s ease;
+    transition: all 0.8s ease;
 
 }
+
 .input-group input {
     font-size: 10px;
 }
-.offcanvas-body .CartItem .item:hover{
+
+.offcanvas-body .CartItem .item:hover {
     background: #051518;
 }
-.border-success{
+
+.border-success {
     color: #65ba8e !important;
     border-width: 5px !important;
 }
-.emptyCartsideMenue{
+
+.emptyCartsideMenue {
     width: fit-content;
     margin: auto;
     display: none;
 }
-.emptyCartsideMenue .btn-success{
+
+.emptyCartsideMenue .btn-success {
     width: 120px;
     font-size: 12px;
     font-weight: bold;
 }
-.emptyCartsideMenue img{
+
+.emptyCartsideMenue img {
     width: 120px;
 }
-.CartItem .item img{
+
+.CartItem .item img {
     max-width: 80px;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 576px) {
+
+    .rows .heading-title {
+        width: 56%;
+        padding: 5px
+    }
+
+    .heading-title h2 {
+        font-size: 15px !important;
+    }
 }
