@@ -325,7 +325,6 @@ a {
 .signup-btn {
     padding: 8px 14px;
     font-size: 14px;
-    margin: 5px;
     font-weight: bold;
     color: white;
     border: none;
@@ -667,16 +666,16 @@ h4 {
     width: 30px;
 }
 
-#game-list {
+.game-list {
     list-style: none;
-    font-size: 10px;
+    font-size: 13px;
 }
 
-#game-list li {
+.game-list li {
     margin-bottom: 12px;
 }
 
-#game-list li::before {
+.game-list li::before {
     content: "";
     width: 12px;
     height: 12px;
@@ -686,7 +685,7 @@ h4 {
     margin-right: 10px;
 }
 
-#game-list li a {
+.game-list li a {
     display: inline;
 }
 
