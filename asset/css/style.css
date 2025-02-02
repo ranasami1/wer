@@ -186,7 +186,7 @@ a {
     color: #65BA8E !important;
 }
 
-.nav-link.active::after {
+.header-wrap .nav-link.active::after {
     content: '';
     width: 6px;
     height: 6px;
