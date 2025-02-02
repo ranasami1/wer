@@ -14,7 +14,7 @@
     <title>single game</title>
 </head>
 
-<body>
+<body class="single-game">
 <div id="top-header" class="container d-none d-md-none d-lg-block">
     <div class="container top-header d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
@@ -220,8 +220,8 @@
         </div>
     </div>
 </div>
-<section class="container p-4">
-    <div class="row">
+<section class="container py-5">
+    <div class="row gx-5">
         <div id="left-side" class="col-md-4">
             <div class="image-container w-100">
                 <img src="./asset/img/gameImg.png" class="img-fluid rounded main-image">
@@ -257,231 +257,225 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-8 d-flex flex-column gap-5">
-            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                <div id="Hline"></div>
-                <div id="secHeader">
-                    <h6>Select voucher</h6>
+        <div id="select-voucher" class="col-md-8 d-flex flex-column gap-5">
+            <div class="rows d-flex align-items-center flex-column position-relative">
+                <div class="Hline"></div>
+                <div class="heading-title ">
+                    <h2>Select voucher</h2>
                 </div>
-                <div class="d-flex align-items-center justify-content-start gap-3 flex-column my-3">
-                    <div class="d-flex align-items-center justify-content-between" style="width: 90%;">
-                        <input id="riotId" type="text" placeholder="Enter your Riot ID">
-                        <img style="width: 30px;" src="./asset/img/question.png">
+                <div class="d-flex  justify-content-start gap-3 flex-column my-3 px-5">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <input id="riotId" placeholder="Enter your Riot ID" class="form-control rounded-pill" type="text">
+                        <img style="width: 30px;" src="./asset/img/question.png" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+
                     </div>
-                    <p style="font-size: 8px; width: 90%;color: #65ba8e69;">To find your Riot ID, please select
+                    <p class="fs-7">To find your Riot ID, please select
                         your profile page
                         and copy your Riot ID + tag using the button next to your Riot ID. Please remove spaces
                         between letters if applicable (example: Westbourne#SEA).</p>
+
+                    <div class="d-flex  justify-content-between w-100">
+                        <select class="form-select rounded-pill" aria-label=".form-select-sm example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <p class="fs-7">To find your Riot ID, please select
+                        your profile page
+                        and copy your Riot ID .</p>
+
                 </div>
-                <div id="signN">
-                    <p>1</p>
+                <div class="signN position-absolute top-50 start--20 translate-middle-y">
+                    <span>1</span>
                 </div>
             </div>
-            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                <div id="Hline"></div>
-                <div id="secHeader">
-                    <h6>Select voucher</h6>
+            <div  class="rows m-0 d-flex align-items-center flex-column position-relative">
+                <div class="Hline"></div>
+                <div class="heading-title">
+                    <h2>Select voucher</h2>
                 </div>
                 <div class="live-badge my-4">
                     <div class="count">27</div>
                     People are viewing this right now
                 </div>
-                <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
-                    <div id="voucherCard" class="Popular d-flex flex-column justify-content-end">
-                        <div id="badge">
-                            <p>Popular</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">60 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
-                            <p id="oldPrice">00.00 EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="voucherCard" class="Starred d-flex flex-column justify-content-end">
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">325 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                            <i class="fa-solid fa-star m-0"></i>
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">325 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">325 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">325 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="voucherCard" class="Regular d-flex flex-column justify-content-end">
-                        <div class="d-flex flex-column align-items-center">
-                            <h6 style="margin: 0 !important;">325 UC</h6>
-                            <img src="./asset/img/Rectangle.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
+                <div class="container pb-4">
+                    <div class="row  px-5 g-4">
+                        <div class="col-xxl-3 ">
+                            <div class="voucherCard text-center  Popular d-flex flex-column justify-content-end">
+                                <div class="badge">
+                                    <p>Popular</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h6 class="m-0">60 UC</h6>
+                                    <img src="./asset/img/Rectangle.png" style="width: 40px;" class="py-2">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">00.00 EGP</h6>
+                                </div>
+                                <p class="oldPrice ps-1">00.00 EGP</p>
 
+                                <div class="discount">
+                                    -10%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3">
+                            <div class="voucherCard text-center   d-flex flex-column justify-content-end">
+                                <div class="badge visibility-hidden">
+                                    <p>Popular</p>
+                                </div>
+                                <div class="d-flex flex-column align-items-center">
+                                    <h6 class="m-0">60 UC</h6>
+                                    <img src="./asset/img/Rectangle.png" style="width: 40px;" class="py-2">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">00.00 EGP</h6>
+                                </div>
+                                <p class="oldPrice ps-1">00.00 EGP</p>
+
+                                <div class="discount">
+                                    -10%
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xxl-3">
+                            <div class="voucherCard text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="badge visibility-hidden">
+                                    <p>Popular</p>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <h6 class="m-0">60 UC</h6>
+                                    <img src="./asset/img/Rectangle.png" style="width: 40px;" class="py-2">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">00.00 EGP</h6>
+                                </div>
+                                <p class="oldPrice ps-1">00.00 EGP</p>
+
+                                <div class="discount">
+                                    -10%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3">
+                            <div class="voucherCard text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="badge visibility-hidden">
+                                    <p>Popular</p>
+                                </div>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <h6 class="m-0">60 UC</h6>
+                                    <img src="./asset/img/Rectangle.png" style="width: 40px;" class="py-2">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">00.00 EGP</h6>
+                                </div>
+                                <p class="oldPrice ps-1">00.00 EGP</p>
+
+                                <div class="discount">
+                                    -10%
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div id="signN">
-                    <p>2</p>
+                <div class="signN position-absolute top-50 start--20 translate-middle-y">
+                    <span>2</span>
                 </div>
             </div>
-            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                <div id="Hline"></div>
-                <div id="secHeader">
-                    <h6>Select payment</h6>
+            <div class="rows m-0 d-flex align-items-center flex-column position-relative">
+                <div class="Hline"></div>
+                <div class="heading-title">
+                    <h2>Select payment</h2>
                 </div>
-                <div class="container d-flex align-items-center justify-content-center gap-5 flex-wrap">
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/Visa.png" style="width: 40px;">
+                <div class="container py-4">
+                    <div class="row  px-5 g-4">
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00 EGP</h6>
-                            <p id="oldPrice">00.00 EGP</p>
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div id="discount">
-                            -10%
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/paypal.png" style="width: 40px;">
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                        <div id="discount">
-                            -10%
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/Group 70.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/Group 70.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/fawry.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/orangeMoney.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
-                        </div>
-                    </div>
-                    <div id="paymentCard" class="d-flex flex-column justify-content-end gap-2">
-                        <div class="d-flex flex-column align-items-center">
-
-                            <img src="./asset/img/Vodafone.png" style="width: 40px;">
-                        </div>
-                        <div class="d-flex align-items-start justify-content-start flex-column">
-                            <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                            <p id="oldPrice">00.00EGP</p>
-                        </div>
-                        <div id="discount">
-                            -10%
+                        <div class="col-xxl-3">
+                            <div class="paymentCard  text-center  Regular d-flex flex-column justify-content-end">
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="./asset/img/Visa.png" style="width: 40px;" class="py-3">
+                                </div>
+                                <div class="d-flex align-items-start flex-column bg-white py-2">
+                                    <h6 class="m-0 v-price ps-1 fw-bolder">FEES +00.00 EGP</h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="signN">
-                    <p>3</p>
+                <div class="signN position-absolute top-50 start--20 translate-middle-y">
+                    <span>3</span>
                 </div>
                 <div id="diffPayment"><a href="#">I want to use a different payment method</a></div>
             </div>
-            <div id="rows" style="margin: 0 !important;" class="d-flex align-items-center flex-column">
-                <div id="Hline"></div>
-                <div id="secHeader">
-                    <h6>BUY!</h6>
+            <div class="rows m-0 d-flex align-items-center flex-column position-relative">
+                <div class="Hline"></div>
+                <div class="heading-title">
+                    <h2>BUY!</h2>
                 </div>
                 <div class="container d-flex align-items-center justify-content-center flex-column last-sec">
                     <p>Please Double-check your email; we'll send your voucher code there.</p>
@@ -503,15 +497,15 @@
                             <div class="d-flex align-items-start justify-content-start flex-column">
                                 <p>000 UC <input type="radio">Card Payment</p>
                                 <h6 style="margin: 0 !important;" id="v-price">00.00EGP</h6>
-                                <p id="oldPrice">00.00EGP</p>
+                                <p class="oldPrice">00.00EGP</p>
                             </div>
-                            <button id="buyNow">BUY NOW</button>
+                            <button id="buyNow" class="rounded-pill">BUY NOW</button>
                         </div>
                     </div>
 
                 </div>
-                <div id="signN">
-                    <p>4</p>
+                <div class="signN position-absolute top-50 start--20 translate-middle-y">
+                    <span>4</span>
                 </div>
             </div>
         </div>

@@ -186,7 +186,7 @@ a {
     color: #65BA8E !important;
 }
 
-.nav-link.active::after {
+.header-wrap .nav-link.active::after {
     content: '';
     width: 6px;
     height: 6px;
@@ -523,15 +523,15 @@ form .form-group .form-control:focus {
 }
 
 
-.game-card:hover, #voucherCard:hover, #paymentCard:hover {
+.game-card:hover, .voucherCard:hover, .paymentCard:hover {
     position: relative;
 }
 
-.game-card:hover, #voucherCard:hover, #paymentCard:hover {
+.game-card:hover, .voucherCard:hover, .paymentCard:hover {
     background: #021013;
 }
 
-.game-card:hover:before, #voucherCard:hover:before, #paymentCard:hover:before {
+.game-card:hover:before, .voucherCard:hover:before, .paymentCard:hover:before {
     content: "";
     position: absolute;
     inset: 0;
@@ -690,31 +690,25 @@ h4 {
     display: inline;
 }
 
-#riotId, #Email {
-    background: #0d2728;
-    border: .5px solid #082327;
-    border-radius: 20px;
-    padding: 5px;
-    color: #65ba8e69;
-    outline: none;
-    width: 93%;
-}
 
-#riotId::placeholder, #Email::placeholder {
-    color: #65ba8e69;
-}
-
-#signN {
+.signN {
     width: 40px;
     height: 40px;
-    background: linear-gradient(90deg, #6effa3, #1583a5);
+    background-image: linear-gradient(
+            90deg,
+            hsl(209deg 66% 37%) 0%,
+            hsl(200deg 49% 39%) 27%,
+            hsl(189deg 35% 42%) 45%,
+            hsl(174deg 30% 46%) 62%,
+            hsl(161deg 33% 51%) 81%,
+            hsl(161deg 38% 52%) 100%
+    );
     border-radius: 20px;
-    position: relative;
-    bottom: 50%;
-    right: 50%;
     text-align: center;
     color: #ffff;
-    font-weight: bold;
+    font-family: "BwModelica-ExtraBold", sans-serif;
+    line-height: 38px;
+    font-size: 25px;
 }
 
 .live-badge {
@@ -738,9 +732,7 @@ h4 {
     margin-right: 8px;
 }
 
-#voucherCard, #paymentCard {
-    width: 110px;
-    height: 130px;
+.voucherCard, .paymentCard {
     background-color: #1a413a;
     overflow: hidden;
     border-radius: 20px;
@@ -756,7 +748,7 @@ h4 {
     background-color: #1a413a !important;
 }
 
-#voucherCard #badge {
+.voucherCard .badge {
     color: black;
     font-weight: bold;
     background: #fdcb41;
@@ -766,10 +758,11 @@ h4 {
     text-align: center;
     transform: rotateY(0deg) rotate(-45deg);
     height: 15px;
+    top:10px
 
 }
 
-#voucherCard i {
+.voucherCard i {
     color: #8f760b4c;
     position: relative;
     font-size: 16px;
@@ -777,21 +770,20 @@ h4 {
     top: -40px;
 }
 
-#v-price {
+.v-price {
     color: #0178BD;
-    background-color: #FFFFFF;
     width: 100%;
 }
 
-#oldPrice {
+.oldPrice {
     margin: 0 !important;
     text-decoration: line-through 1.5px #ffff;
 }
 
-#discount {
+.discount {
     width: 40px;
     position: relative;
-    left: 55px;
+    left: 65%;
     color: #fff;
     background-color: #0178BD;
     border-top-left-radius: 10px;
@@ -856,9 +848,6 @@ h4 {
     color: white;
     background-color: transparent;
     border: 2px solid;
-    border-image-source: linear-gradient(to right, #6effa3, #1583a5);
-    border-image-slice: 2;
-    border-radius: 5px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -1118,4 +1107,32 @@ input[type=number] {
     .heading-title h2 {
         font-size: 15px !important;
     }
+}
+
+.single-game .rows {
+    margin: 0 !important;
+}
+
+.start--20 {
+    left: -20px !important;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+input.form-control,input,select.form-select {
+    background: #0d2728;
+    border: 0.5px solid #082327;
+    border-radius: 20px;
+    color: #ffffff;
+    outline: none;
+    width: 93%;
+}
+.form-control:focus,select.form-select:focus{
+    box-shadow: 0 0 0 .25rem #5fa37b;
+    background: #0d2728;
+    border: 0.5px solid #082327;
+}
+.visibility-hidden{
+    visibility:hidden;
 }
