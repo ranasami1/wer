@@ -460,7 +460,7 @@ form .form-group .form-control:focus {
     border-radius: 20px;
 }
 
-.rows {
+.rows,.total{
     background-color: #051a1f;
     border-radius: 20px;
     overflow: visible;
@@ -1134,4 +1134,16 @@ input.form-control,input,select.form-select {
 }
 .visibility-hidden{
     visibility:hidden;
+}
+.total{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0 !important;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+}
+.coloredRow{
+    background: linear-gradient(to right, #1f649b, #60b58f);
+    height: 30px;
 }
